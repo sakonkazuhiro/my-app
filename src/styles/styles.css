@@ -1,0 +1,46 @@
+/* ヘッダーのスタイル */
+header {
+    display: flex; /* 横並び */
+    align-items: center; /* 中央揃え */
+    justify-content: space-between; /* スペースを均等に */
+    padding: 20px; /* パディング */
+    background-color: #f8f8f8; /* 背景色 */
+}
+
+/* ロゴのスタイル */
+.logo {
+    width: 140px; /* ロゴの幅 */
+    height: auto; /* 高さは自動 */
+}
+
+/* メニューのスタイル */
+.nav {
+    display: flex; /* 横並び */
+    gap: 30px; /* 各項目の間隔 */
+}
+
+.nav a {
+    text-decoration: none; /* 下線を消す */
+    color: #494949; /* テキストの色 */
+    font-weight: bold; /* 太字 */
+    padding: 10px; /* パディング */
+}
+
+.nav a:hover {
+    color: #E64646; /* ホバー時の色 */
+}
+
+body {
+    margin: 0;
+    height: 100vh; /* ビューポートの高さに合わせる */
+    overflow: hidden; /* はみ出しを隠す */
+}
+
+.hero-image {
+    background-image: url('public/images/sukusyo.png');
+    background-size: cover; /* 画像をカバーする */
+    background-position: center; /* 中央に配置 */
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 50% 0 0); /* 右半分を切り取る */
+}

@@ -1,0 +1,83 @@
+/* src/styles/About.module.css */
+
+/* ボディのスタイル */
+.container {
+    width: 1440px; /* 幅 */
+    height: 385px; /* 高さ */
+    margin: 0 auto; /* 中央揃え */
+    background-color: #ffffff; /* 背景色 */
+    border: 1px solid #00aaff; /* 枠線 */
+    position: relative; /* 相対位置 */
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 44px; /* フォントサイズ */
+    font-family: 'Brush Script MT', cursive; /* フォントファミリー */
+    margin: 20px 0; /* マージン */
+    text-align: center; /* 中央揃え */
+}
+
+/* サブタイトルのスタイル */
+.subtitle {
+    font-size: 27px; /* フォントサイズ */
+    text-align: center; /* 中央揃え */
+}
+
+/* 長方形のスタイル */
+.rectangle {
+    width: 190px; /* 幅 */
+    height: 190px; /* 高さ */
+    background-color: #d0d0d0; /* 背景色 */
+    display: inline-block; /* インラインブロック */
+    margin: 10px; /* マージン */
+    text-align: center; /* 中央揃え */
+    line-height: 190px; /* 縦中央揃え */
+    font-size: 48px; /* フォントサイズ */
+}
+
+/* 行のスタイル */
+.row {
+    text-align: center; /* 中央揃え */
+}
+
+/* 追加セクションのスタイル */
+.additionalSection {
+    margin-top: 40px; /* 上マージン */
+    text-align: center; /* 中央揃え */
+}
+
+/* フローページのタイトルスタイル */
+.flowTitle {
+    font-size: 36px; /* フォントサイズ */
+    margin-bottom: 10px; /* 下マージン */
+}
+
+/* フローページの説明文スタイル */
+.flowDescription {
+    font-size: 20px; /* フォントサイズ */
+    margin-bottom: 20px; /* 下マージン */
+}
+
+/* フローページの長方形スタイル */
+.flowRectangle {
+    width: 190px; /* 幅 */
+    height: 190px; /* 高さ */
+    background-color: #d0d0d0; /* 背景色 */
+    display: inline-block; /* インラインブロック */
+    margin: 10px; /* マージン */
+    text-align: center; /* 中央揃え */
+    line-height: 190px; /* 縦中央揃え */
+    font-size: 48px; /* フォントサイズ */
+}
+
+/* フローページの行スタイル */
+.flowRow {
+    text-align: center; /* 中央揃え */
+}
+
+/* フローページのテキストスタイル */
+.flowText {
+    margin-top: 20px; /* 上マージン */
+    font-size: 16px; /* フォントサイズ */
+}

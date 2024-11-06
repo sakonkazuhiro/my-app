@@ -1,52 +1,87 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff; /* Background color */
-    padding: 20px;
+/* body スタイルは削除 */
+.imageContainer {
+    position: relative; /* 相対位置を設定 */
+    width: 100%; /* 幅を100%に */
+    height: 100vh; /* 高さをビューポートに合わせる */
 }
 
-.header {
+/* 上部の画像とテキストオーバーレイ */
+.hero-image {
+    background-image: url('/images/sukusyo.png'); /* 画像のパスを修正 */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    clip-path: inset(0 50% 0 0); /* 右半分を切り取る */
+}
+
+/* メイン全体のレイアウト */
+.main {
+    display: flex;
+    flex-direction: column; /* 縦方向にレイアウト */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 背景画像 */
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* テキストのオーバーレイ */
+.textOverlay {
+    position: absolute;
+    top: 50%; /* 画像の中央に配置 */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
-    margin-bottom: 20px;
+    z-index: 1;
 }
 
 .title {
-    font-size: 2.5rem; /* Title size */
-    font-weight: bold;
-    color: #333; /* Title color */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .subtitle {
-    font-size: 1.5rem; /* Subtitle size */
-    color: #333; /* Subtitle color */
-    margin: 10px 0;
+    font-size: 1.5rem;
 }
 
-.description {
-    font-size: 1.2rem; /* Description size */
-    color: #666; /* Description color */
-    margin: 10px 0;
+/* 下部の特徴セクション */
+.features {
+    padding: 40px;
+    text-align: center;
 }
 
-.button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #ff5722; /* Button background color */
-    color: white; /* Button text color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.featuresTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Cursive', sans-serif;
 }
 
-.imageContainer {
-    width: 100%;
+.featuresDescription {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-family: 'Cursive', sans-serif;
+}
+
+.featureCards {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
-.image {
-    max-width: 100%;
-    height: auto;
+.card {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.5rem;
 }

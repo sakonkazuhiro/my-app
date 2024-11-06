@@ -1,14 +1,20 @@
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import About from './pages/about';
+import Flow from './pages/flow';
 import './styles/globals.css';
 
 const App = () => {
     return (
-        <div>
-            <Header />
-            <Main />
-        </div>
+        <Router>
+            <Switch>
+                <Route path="/about" component={About} />
+                <Route path="/flow" component={Flow} />
+                <Route path="/" exact>
+                    <h1>ホームページ</h1>
+                </Route>
+            </Switch>
+        </Router>
     );
 };
 

@@ -1,0 +1,47 @@
+/* src/styles/Flow.module.css */
+
+/* コンテナのスタイル */
+.container {
+    width: 1440px; /* 幅 */
+    margin: 0 auto; /* 中央揃え */
+    padding: 20px; /* パディング */
+    background-color: #ffffff; /* 背景色 */
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 44px; /* フォントサイズ */
+    text-align: center; /* 中央揃え */
+    margin-bottom: 10px; /* 下マージン */
+}
+
+/* サブタイトルのスタイル */
+.subtitle {
+    font-size: 27px; /* フォントサイズ */
+    text-align: center; /* 中央揃え */
+    margin-bottom: 20px; /* 下マージン */
+}
+
+/* 長方形のスタイル */
+.rectangle {
+    width: 190px; /* 幅 */
+    height: 190px; /* 高さ */
+    background-color: #d0d0d0; /* 背景色 */
+    display: inline-block; /* インラインブロック */
+    margin: 10px; /* マージン */
+    text-align: center; /* 中央揃え */
+    line-height: 190px; /* 縦中央揃え */
+    font-size: 48px; /* フォントサイズ */
+}
+
+/* 行のスタイル */
+.row {
+    text-align: center; /* 中央揃え */
+}
+
+/* 説明文のスタイル */
+.description {
+    text-align: center; /* 中央揃え */
+    margin-top: 20px; /* 上マージン */
+    font-size: 16px; /* フォントサイズ */
+}
