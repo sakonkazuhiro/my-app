@@ -9,8 +9,14 @@ header {
 
 /* ロゴのスタイル */
 .logo {
+    position: absolute; /* 絶対配置に変更 */
     width: 140px; /* ロゴの幅 */
-    height: auto; /* 高さは自動 */
+    height: 28px; /* 高さを28pxに変更 */
+    flex-shrink: 0; /* 縮小しないように追加 */
+    top: 43px; /* トップの位置を43pxに設定 */
+    left: 40px; /* 左の位置を40pxに設定 */
+    right: 1260px; /* 右の位置を1260pxに設定 */
+    /* アンダー4989pxは無視されます。 */
 }
 
 /* メニューのスタイル */

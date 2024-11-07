@@ -1,13 +1,39 @@
 /* body スタイルは削除 */
-.imageContainer {
-    position: relative; /* 相対位置を設定 */
-    width: 100%; /* 幅を100%に */
-    height: 100vh; /* 高さをビューポートに合わせる */
+/* テキストのみ背景画像を適用 */
+.backgroundImageText {
+    font-size: 66.947px;
+    font-weight: 700;
+    top: 278px; /* トップの位置 */
+    left: 269px; /* 左の位置 */
+    right: 645px; /* 右の位置 */
+    color: transparent; /* テキスト色を透明にする */
+    background-image: url('/images/huaki.png'); /* 背景画像のパスを指定 */
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text; /* テキストに背景画像をクリップ */
+    background-clip: text;
+    line-height: normal;
+    letter-spacing: -1.339px;
+    font-family: 'Jura', sans-serif;
+    opacity: 0.6;
+    text-align: left; /* 左寄せ */
+}
+
+.imageLeft {
+    width: 50%; /* 左側の画像の幅を50%に設定 */
+    height: auto; /* 高さは自動 */
+    background: url('/images/mein.png') lightgray 50% / cover no-repeat; /* 左側の画像を背景として設定 */
+}
+
+.imageRight {
+    width: 50%; /* 右側の画像の幅を50%に設定 */
+    height: auto; /* 高さは自動 */
+    background: url('/images/mein2.png') lightgray 50% / cover no-repeat; /* 右側の画像を背景として設定 */
 }
 
 /* 上部の画像とテキストオーバーレイ */
 .hero-image {
-    background-image: url('/images/sukusyo.png'); /* 画像のパスを修正 */
+    background-image: url('/images/sukusyo.png'); /* 画像のを修正 */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -17,19 +43,20 @@
 
 /* メイン全体のレイアウト */
 .main {
-    display: flex;
-    flex-direction: column; /* 縦方向にレイアウト */
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    position: relative; /* 相対位置指定 */
+    width: 100%; /* 幅を100%に設定 */
+    height: 100vh; /* 高さをビューポートに合わせる */
 }
 
 /* 背景画像 */
 .backgroundImage {
-    width: 100%;
-    height: 100%;
+    width: 700px; /* 幅を指定 */
+    height: 700px; /* 高さを指定 */
     object-fit: cover;
-}
+    transform: rotate(90deg); /* 画像を90度回転して縦にする */
+    opacity: 0; /* 非表示 */
+    visibility: hidden; /* 完全に見えなくする */
+    }
 
 /* テキストのオーバーレイ */
 .textOverlay {
@@ -84,4 +111,134 @@
     align-items: center;
     margin: 0 10px;
     font-size: 1.5rem;
+}
+
+.rightImage {
+    position: absolute; /* 絶対位置指定 */
+    top: 31px; /* ロゴの下からの距離 */
+    right: 40px; /* 右からの距離 */
+    width: 406.737px; /* 幅 */
+    height: 765.771px; /* 高さ */
+    z-index: 0; /* 背景として表示 */
+}
+
+/* ロゴのスタイル */
+.logo {
+    position: absolute; /* 絶対配置に変更 */
+    width: 140px; /* ロゴの幅 */
+    height: 28px; /* 高さを28pxに変更 */
+    flex-shrink: 0; /* 縮小しないように追加 */
+    top: 43px; /* トップの位置を43pxに設定 */
+    left: 40px; /* 左の位置を40pxに設定 */
+    right: 1260px; /* 右の位置を1260pxに設定 */
+    /* アンダー4989pxは無視されます。 */
+}
+
+/* 既存のスタイルの下に追加 */
+
+.mainText {
+    width: 613.551px;
+    height: 976.316px;
+    flex-shrink: 0;
+    opacity: 0.8;
+    background: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721.png') lightgray 50% / cover no-repeat; /* 正しいパスを指定 */
+    color: #E85959;
+    font-family: 'Jura', sans-serif;
+    font-size: 66.947px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.339px;
+
+    /* テキストの位置 */
+    position: absolute;
+    top: 278px;
+    left: 269px;
+    right: 645px;
+}
+
+/* サブテキスト */
+.subtitle {
+    color: #1F1F1F; /* 黒色 */    
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-align: left; /* 左寄せ */
+
+    /* テキストの位置 */
+    position: absolute;
+    top: 462px;
+    left: 513px;
+    right: 645px;
+    text-align: center;
+    
+}
+
+/* 隠された画像（見えない設定） */
+.hiddenImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 700px;
+    opacity: 0; /* 非表示 */
+    visibility: hidden; /* 完全に見えなくする */
+    background: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721.png') no-repeat center center;
+    background-size: cover;
+}
+
+.hidden-background {
+    position: absolute; /* 絶対配置 */
+    top: 461.76px; /* アンダの位置 */
+    left: 0; /* 左の位置 */
+    right: 0; /* 右の位置 */
+    bottom: 0; /* 下の位置 */
+    background-color: white; /* 背景色を白に設定（他の画像が見えないように） */
+    z-index: 0; /* 背景を後ろに配置 */
+}
+
+/* メニューのスタイル */
+.menu {
+    position: absolute; /* 絶対配置 */
+    top: 20px; /* 上からの距離 */
+    right: 40px; /* 右からの距離 */
+    display: flex; /* フレックスボックスを使用 */
+    gap: 76px; /* 各メニュー項目の間隔 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP", sans-serif; /* フォントファミリー */
+    font-size: 13px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}
+
+.menu-item {
+    cursor: pointer; /* カーソルをポインターに */
+}
+
+.infoBox {
+    width: 1000px; /* 幅を1000pxに設定 */
+    height: 335px; /* 高さを335pxに設定 */
+    flex-shrink: 0; /* 縮小しない */
+    opacity: 0.8; /* 不透明度を0.8に設定 */
+    background: #FFF; /* 背景色を白に設定 */
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16); /* ボックスシャドウを設定 */
+    position: absolute; /* 絶対配置 */
+    left: 937px; /* 左の位置を937pxに設定 */
+    top: 462px; /* トップの位置を462pxに設定（必要に応じて調整） */
+    padding: 20px; /* 内側の余白を設定 */
+    z-index: 1; /* 他の要素の上に表示 */
+}
+
+.infoText {
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP", sans-serif; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 500; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    letter-spacing: 2.88px; /* 文字間隔 */
 }
