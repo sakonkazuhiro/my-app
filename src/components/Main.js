@@ -23,8 +23,14 @@ const Main = () => {
             </h1>
 
             {/* サブテキスト */}
-            <p className={styles.subText}>創造力を引き出すAIテクノロジー</p>                    </div>
-                    <div className={styles.hiddenImage}></div>
+            <p className={styles.subText}>創造力を引き出すAIテクノロジー</p></div>{/* クラス名を修正 */}
+           <div className={styles.container}>
+    <p className={styles.description}>ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チームを提供します。</p>
+    <div className={styles.logoContainer}>
+        <img src="/images/Vector 20.svg" alt="Logo" className={styles.logo} />
+        <span className={styles.text}>運営会社・ReAliceについて</span>
+    </div>
+</div>
                 </div>
             </div>
             <div className={styles.hiddenBackground}></div>
@@ -37,6 +43,7 @@ const Main = () => {
                 <div className={styles.menuItem}>contact</div>
             </div>
         </main>
+        
     );
 };
 

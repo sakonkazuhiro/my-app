@@ -9,14 +9,19 @@
     color: transparent; /* テキスト色を透明にする */
     background-image: url('/images/huaki.png'); /* 背景画像のパスを指定 */
     background-size: cover;
-    background-position: center;
+    background-position: center 30px; /* 背景画像を少し上にずらす */
+
     -webkit-background-clip: text; /* テキストに背景画像をクリップ */
     background-clip: text;
     line-height: normal;
     letter-spacing: -1.339px;
     font-family: 'Jura', sans-serif;
-    opacity: 0.6;
+    opacity: 0.8; /* 背景画像の不透明度を上げる */
     text-align: left; /* 左寄せ */
+}
+.moving-background {
+    background-position: center 30px; /* 背景画像を少し上にずらす */
+    opacity: 0.8; /* 背景画像の不透明度を上げる */
 }
 
 .imageLeft {
@@ -33,7 +38,7 @@
 
 /* 上部の画像とテキストオーバーレイ */
 .hero-image {
-    background-image: url('/images/sukusyo.png'); /* 画像のを修正 */
+    background-image: url('/images/huaki.png'); /* 画像のを修正 */
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -64,8 +69,7 @@
     top: 50%; /* 画像の中央に配置 */
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
+    color: #1F1F1F !important; /* 黒色 */     text-align: center;
     z-index: 1;
 }
 
@@ -241,4 +245,150 @@
     font-weight: 500; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
     letter-spacing: 2.88px; /* 文字間隔 */
+}
+/* 中央ライン */
+.center-line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px; /* ラインの幅 */
+    height: 100%;
+    background-color: white;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* テキストコンテナ */
+.text-content {
+    position: absolute;
+    top: 278px; /* トップ位置 */
+    left: 269px; /* 左からの距離 */
+    right: 645px; /* 右からの距離 */
+    text-align: center;
+    opacity: 0.6;
+    color: #E85959;
+}
+
+/* タイトル */
+.text-content h1 {
+    font-size: 66.947px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.339px;
+    font-family: 'Jura', sans-serif;
+    white-space: pre-line;
+}
+
+/* サブタイトル */
+.text-content p {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Noto Sans JP", sans-serif;
+    color: #1F1F1F; /* 黒文字 */
+    letter-spacing: 2.88px;
+    margin-top: 10px;
+    position: absolute;
+    top: 462px;
+    left: 513px;
+    right: 645px;
+    text-align: center;
+}
+
+/* メインコンテナ */
+.container {
+    position: absolute; /* 絶対配置に変更 */
+    width: 1000px;
+    height: 335px;
+    flex-shrink: 0;
+    opacity: 0.8;
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に配置 */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 中央揃え */
+    top: 554px; /* 上の位置を554pxに設定 */
+    left: 440px; /* 左の位置を440pxに設定 */
+}
+
+.logoContainer {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 中央揃え */
+    position: absolute; /* 絶対配置に変更 */
+    top: 250px; /* 上の位置を250pxに設定 */
+    left: 71px; /* 左の位置を71pxに設定 */
+}
+
+.logo {
+    width: auto; /* 幅を自動に設定 */
+    height: 73px; /* 高さを73pxに設定 */
+    margin-right: 10px; /* ロゴと社名の間にスペースを追加 */
+}
+
+.text {
+    color: #1F1F1F; /* 黒色に変更 */
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-align: left; /* 左寄せ */
+    margin-left: 10px; /* ロゴとテキストの間にスペースを追加 */
+}
+
+/* 背景画像1 */
+.background-image-1 {
+    position: absolute;
+    width: 1437px;
+    height: 988px;
+    background-image: url('/images/mein.png'); /* 1枚目の画像 */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+/* 背景画像2 */
+.background-image-2 {
+    position: absolute;
+    width: 1437px;
+    height: 988px;
+    background-image: url('/images/mein2.png'); /* 2枚目の画像 */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); /* 中央から右半分のみ表示 */
+}
+
+.text {
+    color: #1F1F1F; /* 黒色に変更 */
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-align: center; /* 中央揃え */
+}
+
+.container {
+    width: 1000px;
+    height: 335px;
+    flex-shrink: 0;
+    opacity: 0.8;
+    background: #FFF;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* 縦に配置 */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 中央揃え */
+}
+
+.logoContainer {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 中央揃え */
+}
+
+.logo {
+    margin-right: 10px; /* ロゴとテキストの間にスペースを追加 */
 }
