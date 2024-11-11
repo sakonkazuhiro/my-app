@@ -2,48 +2,69 @@ import React from 'react';
 import styles from '../styles/Main.module.css';
 
 const Main = () => {
+    const menuItems = [
+        { title: 'TOP', subtitle: 'トップへ' },
+        { title: 'Service', subtitle: 'サービス' },
+        { title: 'Flow', subtitle: '開発フロー' },
+        { title: 'Works', subtitle: '開発事例' },
+        { title: 'Contact', subtitle: 'お問い合わせ' }
+    ];
+
     return (
-        <main>
-            {/* 背景画像（非表示） */}           
-             <div className={styles.leftContainer}>
-                <div className={styles.imageTop}>
-                    <img src="/images/logo.svg" alt="Top Image" className={styles.topImage} />
-                </div>
-                <div className={styles.imageBottom}>
-                    <img src="/images/mein.png" alt="Bottom Image" className={styles.bottomImage} />
-                </div>
-            </div>
-            <div className={styles.rightContainer}>
-                <div className={styles.imageContainer}>
-                    <img src="/images/huaki.png" alt="Background" className={styles.backgroundImage} />
-                    <div className={styles.textOverlay}>
- {/* メインテキスト */}
- <h1 className={styles.backgroundImageText}>
-                AI Technology<br />or Unleashing<br />Creativity
+        <main className={styles.mainContainer}>
+            <img 
+                src="/images/logo.svg" 
+                alt="ReAlice Logo" 
+                className={styles.logoImage}
+            />
+
+            <nav className={styles.navigationContainer}>
+                {menuItems.map((item, index) => (
+                    <div key={index} className={styles.menuItem}>
+                        <span className={styles.menuTitle}>{item.title}</span>
+                        <span className={styles.menuSubtitle}>{item.subtitle}</span>
+                    </div>
+                ))}
+            </nav>
+
+            <h1 className={styles.textWithImageMask}>
+                AI Technology<br />
+                for Unleashing<br />
+                Creativity
+            </h1>
+            <h1 className={styles.textOverlay}>
+                AI Technology<br />
+                for Unleashing<br />
+                Creativity
             </h1>
 
-            {/* サブテキスト */}
-            <p className={styles.subText}>創造力を引き出すAIテクノロジー</p></div>{/* クラス名を修正 */}
-           <div className={styles.container}>
-    <p className={styles.description}>ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チームを提供します。</p>
-    <div className={styles.logoContainer}>
-        <img src="/images/Vector 20.svg" alt="Logo" className={styles.logo} />
-        <span className={styles.text}>運営会社・ReAliceについて</span>
-    </div>
-</div>
+            <p className={styles.japaneseText}>
+                創造力を引き出すAIテクノロジー
+            </p>
+
+            <div className={styles.imageWrapper}>
+                <img 
+                    src="/images/mailb.png" 
+                    alt="Background" 
+                    style={{
+                        position: 'absolute',
+                        top: '72px',
+                        right: '646px',
+                        left: '184px',
+                        width: '406.737px',
+                        height: '765.771px',
+                        flexShrink: 0,
+                    }}
+                />
+                <div className={styles.backgroundMask}>
+                    <div className={styles.visibleArea}></div>
                 </div>
             </div>
-            <div className={styles.hiddenBackground}></div>
 
-            <div className={styles.menu}>
-                <div className={styles.menuItem}>menu</div>
-                <div className={styles.menuItem}>menu</div>
-                <div className={styles.menuItem}>menu</div>
-                <div className={styles.menuItem}>menu</div>
-                <div className={styles.menuItem}>contact</div>
+            <div className={styles.footerContainer}>
+                {/* ここにテキストコンテンツを追加予定 */}
             </div>
         </main>
-        
     );
 };
 

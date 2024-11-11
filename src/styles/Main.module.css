@@ -3,9 +3,9 @@
 .backgroundImageText {
     font-size: 66.947px;
     font-weight: 700;
-    top: 278px; /* トップの位置 */
-    left: 269px; /* 左の位置 */
-    right: 645px; /* 右の位置 */
+    top: 25.45px; /* トップの位置 */
+    left: 795.47px; /* 左の位置 */
+    right: 30.98px; /* 右の位置 */
     color: transparent; /* テキスト色を透明にする */
     background-image: url('/images/huaki.png'); /* 背景画像のパスを指定 */
     background-size: cover;
@@ -17,23 +17,10 @@
     letter-spacing: -1.339px;
     font-family: 'Jura', sans-serif;
     opacity: 0.8; /* 背景画像の不透明度を上げる */
-    text-align: left; /* 左寄せ */
 }
 .moving-background {
     background-position: center 30px; /* 背景画像を少し上にずらす */
     opacity: 0.8; /* 背景画像の不透明度を上げる */
-}
-
-.imageLeft {
-    width: 50%; /* 左側の画像の幅を50%に設定 */
-    height: auto; /* 高さは自動 */
-    background: url('/images/mein.png') lightgray 50% / cover no-repeat; /* 左側の画像を背景として設定 */
-}
-
-.imageRight {
-    width: 50%; /* 右側の画像の幅を50%に設定 */
-    height: auto; /* 高さは自動 */
-    background: url('/images/mein2.png') lightgray 50% / cover no-repeat; /* 右側の画像を背景として設定 */
 }
 
 /* 上部の画像とテキストオーバーレイ */
@@ -43,7 +30,6 @@
     background-position: center;
     width: 100%;
     height: 100%;
-    clip-path: inset(0 50% 0 0); /* 右半分を切り取る */
 }
 
 /* メイン全体のレイアウト */
@@ -66,11 +52,20 @@
 /* テキストのオーバーレイ */
 .textOverlay {
     position: absolute;
-    top: 50%; /* 画像の中央に配置 */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #1F1F1F !important; /* 黒色 */     text-align: center;
-    z-index: 1;
+    top: 303px;
+    right: 101px;
+    width: 526px;
+    font-family: 'Jura', sans-serif; /* sansserifをフォールバックとして追加 */
+    font-size: 66.947px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.339px;
+    color: #E85959;
+    opacity: 0.6;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
 }
 
 .title {
@@ -137,30 +132,6 @@
     right: 1260px; /* 右の位置を1260pxに設定 */
     /* アンダー4989pxは無視されます。 */
 }
-
-/* 既存のスタイルの下に追加 */
-
-.mainText {
-    width: 613.551px;
-    height: 976.316px;
-    flex-shrink: 0;
-    opacity: 0.8;
-    background: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721.png') lightgray 50% / cover no-repeat; /* 正しいパスを指定 */
-    color: #E85959;
-    font-family: 'Jura', sans-serif;
-    font-size: 66.947px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: -1.339px;
-
-    /* テキストの位置 */
-    position: absolute;
-    top: 278px;
-    left: 269px;
-    right: 645px;
-}
-
 /* サブテキスト */
 .subtitle {
     color: #1F1F1F; /* 黒色 */    
@@ -180,23 +151,9 @@
     text-align: center;
     
 }
-
-/* 隠された画像（見えない設定） */
-.hiddenImage {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 700px;
-    height: 700px;
-    opacity: 0; /* 非表示 */
-    visibility: hidden; /* 完全に見えなくする */
-    background: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721.png') no-repeat center center;
-    background-size: cover;
-}
-
 .hidden-background {
-    position: absolute; /* 絶対配置 */
-    top: 461.76px; /* アンダの位置 */
+    position: absolute; /* 絶対置 */
+    top: 461.76px; /* ンダの位置 */
     left: 0; /* 左の位置 */
     right: 0; /* 右の位置 */
     bottom: 0; /* 下の位置 */
@@ -258,17 +215,6 @@
     z-index: 2;
 }
 
-/* テキストコンテナ */
-.text-content {
-    position: absolute;
-    top: 278px; /* トップ位置 */
-    left: 269px; /* 左からの距離 */
-    right: 645px; /* 右からの距離 */
-    text-align: center;
-    opacity: 0.6;
-    color: #E85959;
-}
-
 /* タイトル */
 .text-content h1 {
     font-size: 66.947px;
@@ -293,38 +239,6 @@
     right: 645px;
     text-align: center;
 }
-
-/* メインコンテナ */
-.container {
-    position: absolute; /* 絶対配置に変更 */
-    width: 1000px;
-    height: 335px;
-    flex-shrink: 0;
-    opacity: 0.8;
-    background: #FFF;
-    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
-    display: flex; /* フレックスボックスを使用 */
-    flex-direction: column; /* 縦に配置 */
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 中央揃え */
-    top: 554px; /* 上の位置を554pxに設定 */
-    left: 440px; /* 左の位置を440pxに設定 */
-}
-
-.logoContainer {
-    display: flex; /* フレックスボックスを使用 */
-    align-items: center; /* 中央揃え */
-    position: absolute; /* 絶対配置に変更 */
-    top: 250px; /* 上の位置を250pxに設定 */
-    left: 71px; /* 左の位置を71pxに設定 */
-}
-
-.logo {
-    width: auto; /* 幅を自動に設定 */
-    height: 73px; /* 高さを73pxに設定 */
-    margin-right: 10px; /* ロゴと社名の間にスペースを追加 */
-}
-
 .text {
     color: #1F1F1F; /* 黒色に変更 */
     font-family: "Noto Sans JP", sans-serif;
@@ -337,38 +251,17 @@
     margin-left: 10px; /* ロゴとテキストの間にスペースを追加 */
 }
 
-/* 背景画像1 */
-.background-image-1 {
-    position: absolute;
-    width: 1437px;
-    height: 988px;
-    background-image: url('/images/mein.png'); /* 1枚目の画像 */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-}
-
-/* 背景画像2 */
-.background-image-2 {
-    position: absolute;
-    width: 1437px;
-    height: 988px;
-    background-image: url('/images/mein2.png'); /* 2枚目の画像 */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.5;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%); /* 中央から右半分のみ表示 */
-}
-
 .text {
     color: #1F1F1F; /* 黒色に変更 */
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.88px;
-    text-align: center; /* 中央揃え */
+    font-size: 16px; /* フォントサイズを確認 */
+    font-weight: 700; /* 太字 */
+}
+
+.description {
+    color: #1F1F1F; /* 黒色 */
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 14px; /* フォントサイズを確認 */
 }
 
 .container {
@@ -385,10 +278,224 @@
 }
 
 .logoContainer {
-    display: flex; /* フレックスボックスを使用 */
+    display: flex; /* フレッススを使用 */
     align-items: center; /* 中央揃え */
 }
 
 .logo {
     margin-right: 10px; /* ロゴとテキストの間にスペースを追加 */
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 500px; /* 必要に応じて高さを調整 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLeft, .imageRight {
+    position: absolute;
+    width: 45%; /* 画像の幅を調整 */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px; /* 隅を丸くする */
+    overflow: hidden;
+}
+
+/* 左側の画像（三角形を頂点を上に反転してleftに寄せる） */
+.imageLeft {
+    position: absolute;
+    top: 119px;
+    left: 0; /* leftに寄せる */
+    width: 685.428px;
+    height: 1229px;
+    background-image: url('/images/mailh.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(50% 0, 100% 100%, 0 100%); /* 頂点が上、底辺が下の三角形 */
+    border-radius: 15px;
+}
+
+/* 右側の画像 */
+.imageRight {
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%); /* 右半分の三角形 */
+    background-image: url('/images/mailb.png'); /* 右の画像パス */
+}
+
+/* 中央のライン */
+.center-line {
+    position: absolute;
+    width: 3px; /* ラインの幅を調整 */
+    height: 100%;
+    background-color: #EAD6D6; /* ラインの色を指定 */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.mainContainer {
+    width: 1440px; /* 幅 */
+    height: 6748px; /* 高さ */
+    background: #F8F8F8; /* 背景色 */
+    position: relative; /* 相対位置指定 */
+}
+
+.imageBackground {
+    position: absolute; /* 絶対配置 */
+    top: 278px; /* 上からの位置 */
+    right: 70px; /* 右からの位置 */
+    width: 613.551px; /* 幅 */
+    height: 976.316px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    opacity: 0.8; /* 不透明度 */
+    background: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721 1.png') lightgray 50% / cover no-repeat; /* 画像背景 */
+}
+
+.headerContainer {
+    width: 1440px; /* 幅 */
+    height: 778px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    opacity: 0.2; /* 不透明度 */
+    background: linear-gradient(238deg, #E64646 0%, rgba(230, 70, 70, 0.00) 46.48%); /* グラデーション背景 */
+    position: relative; /* 相対位置指定 */
+}
+
+.mainContainer {
+    width: 1440px;
+    height: 6748px;
+    background: #F8F8F8;
+    position: relative; /* 子要素の配置基準 */
+}
+
+/* 共通のテキストスタイル */
+.textBase {
+    position: absolute;
+    top: 303px;
+    right: 101px;
+    width: 526px;
+    font-family: 'Jura', sans-serif;
+    font-size: 66.947px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.339px;
+    margin: 0;
+    padding: 0;
+}
+
+/* 画像マスクされたテキスト */
+.textWithImageMask {
+    position: absolute;
+    top: 303px;
+    right: 101px;
+    width: 526px;
+    font-family: 'Jura';
+    font-size: 66.947px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.339px;
+    color: transparent;
+    background-image: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721 1.png');
+    background-size: cover;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* 半透明の赤色テキスト */
+.textOverlay {
+    position: absolute;
+    top: 303px;
+    right: 101px;
+    width: 526px;
+    font-family: 'Jura';
+    font-size: 66.947px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.339px;
+    color: #E85959;
+    opacity: 0.6;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.japaneseText {
+    position: absolute;
+    right: 200px; /* leftをrightに変更 */
+    top: 563px;
+    color: #1F1F1F;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4.32px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap; /* テキストの折り返しを防ぐ */
+}
+
+.logoImage {
+    position: fixed; /* 画面上で固定 */
+    top: 44px;
+    left: 62px;
+    width: 140px; /* ロゴの幅 */
+    height: 28px; /* ロゴの高さ */
+    z-index: 1000; /* 最前面に配置 */
+}
+
+.navigationContainer {
+    position: absolute;
+    top: 39px;
+    right: 161px;
+    display: flex;
+    gap: 40px; /* コンテンツ間の間隔 */
+    align-items: center;
+    z-index: 1000;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuTitle {
+    color: #1F1F1F;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+
+.menuSubtitle {
+    color: #1F1F1F;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footerContainer {
+    position: absolute;
+    bottom: 0;
+    width: 1440px;
+    height: 190px;
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(7px);
+    z-index: 10;
 }

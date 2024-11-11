@@ -3,9 +3,11 @@ import styles from '../styles/UnifiedStyles.css';
 
 const Header = () => {
     return (
-        <header className={styles.header}>
+        <header>
             <Logo />
-            {/* メニューやボタンをここに追加 */}
+            <nav className={styles.nav}>
+                {/* メニュー項目 */}
+            </nav>
         </header>
     );
 };
