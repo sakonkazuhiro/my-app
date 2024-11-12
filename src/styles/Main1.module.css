@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
+.container {
+    width: 1440px;
+    height: 747px;
+    flex-shrink: 0;
+    background: #F1EAEA;
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: center; /* 中央揃え */
+    align-items: center; /* 中央揃え */
+    margin: 0 auto; /* 中央揃え */
+    position: relative; /* 相対位置 */
+    top: 969px; /* 上からの距離を969pxに設定 */
+}
+
+.innerContainer {
+    display: flex; /* フレックスボックスを使用 */
+    width: 745px; /* 幅を745pxに設定 */
+    align-items: flex-start; /* 上揃え */
+    gap: 80px; /* 要素間の間隔を80pxに設定 */
+    position: absolute; /* 絶対配置に設定 */
+    top: 234px; /* 上からの距離を234pxに設定 */
+    right: 348px; /* 右からの距離を348pxに設定 */
+    left: 347px; /* 左からの距離を347pxに設定 */
+}
+
+.logo {
+    margin-bottom: 10px; /* ロゴとテキストの間にスペースを追加 */
+}
+
+.text {
+    font-size: 24px; /* テキストサイズを調整 */
+    font-weight: bold; /* 太字 */
+}
+
+.description {
+    font-size: 16px; /* 説明文のフォントサイズ */
+    text-align: center; /* 中央揃え */
+}
+
+.title {
+    position: absolute; /* 絶対配置に設定 */
+    top: 58px; /* 上からの距離を58pxに設定 */
+    left: 80px; /* 左からの距離を80pxに設定 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 32px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 500; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    letter-spacing: 6.4px; /* 文字間隔 */
+}
+
+.parent {
+    position: relative; /* 親要素に追加 */
+}
+
+.rotatedText {
+    position: absolute; /* 絶対配置に設定 */
+    top: 69px; /* 上からの距離を69pxに設定 */
+    left: 53px; /* 左からの距離を53pxに設定 */
+    bottom: 173px; /* 下からの距離を173pxに設定 */
+    transform: rotate(-90deg); /* テキストを-90度回転 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: Jura; /* フォントファミリー */
+    font-size: 60px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    opacity: 0.3; /* 不透明度 */
+}
+

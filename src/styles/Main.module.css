@@ -1,3 +1,7 @@
+/* my-app/src/styles/Main.module.css または my-app/src/index.css の先頭に追加 */
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+
 /* body スタイルは削除 */
 /* テキストのみ背景画像を適用 */
 .backgroundImageText {
@@ -33,12 +37,14 @@
 }
 
 /* メイン全体のレイアウト */
-.main {
+.mainContainer {
+    width: 1440px; /* 幅 */
+    height: 6748px; /* 高さ */
+    background: #F8F8F8; /* 背景色 */
     position: relative; /* 相対位置指定 */
-    width: 100%; /* 幅を100%に設定 */
-    height: 100vh; /* 高さをビューポートに合わせる */
 }
 
+/* その他のスタイルはそのまま保持 */
 /* 背景画像 */
 .backgroundImage {
     width: 700px; /* 幅を指定 */
@@ -123,7 +129,7 @@
 
 /* ロゴのスタイル */
 .logo {
-    position: absolute; /* 絶対配置に変更 */
+    position: absolute; /* 絶対配置に設定 */
     width: 140px; /* ロゴの幅 */
     height: 28px; /* 高さを28pxに変更 */
     flex-shrink: 0; /* 縮小しないように追加 */
@@ -240,28 +246,29 @@
     text-align: center;
 }
 .text {
-    color: #1F1F1F; /* 黒色に変更 */
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 2.88px;
-    text-align: left; /* 左寄せ */
-    margin-left: 10px; /* ロゴとテキストの間にスペースを追加 */
-}
-
-.text {
+    position: absolute; /* 絶対配置に変更 */
+    top: 85px; /* 上からの距離を85pxに設定 */
+    right: 40px; /* 右からの距離を40pxに設定 */
+    width: 664px; /* 幅を664pxに設定 */
     color: #1F1F1F; /* 黒色に変更 */
     font-family: "Noto Sans JP", sans-serif;
     font-size: 16px; /* フォントサイズを確認 */
-    font-weight: 700; /* 太字 */
+    font-weight: 400; /* フォントウェイトを400に設定 */
+    line-height: 32px; /* 行の高さを32pxに設定 */
+    white-space: normal; /* 改行を許可 */
 }
 
 .description {
+    position: absolute; /* 絶対配置に変更 */
+    top: 100px; /* 上からの距離を100pxに設定（必要に応じて調整） */
+    left: 40px; /* 左からの距離を40pxに設定 */
+    width: 664px; /* 幅を664pxに設定 */
     color: #1F1F1F; /* 黒色 */
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 14px; /* フォントサイズを確認 */
+    font-size: 16px; /* フォントサイズを確認 */
+    font-weight: 400; /* フォントウェイトを400に設定 */
+    line-height: 32px; /* 行の高さを32pxに設定 */
+    white-space: normal; /* 改行を許可 */
 }
 
 .container {
@@ -498,4 +505,47 @@
     background: rgba(255, 255, 255, 0.80);
     backdrop-filter: blur(7px);
     z-index: 10;
+}
+
+.transparentContainer {
+    position: absolute; /* 絶対位置指定 */
+    top: 779px; /* 上からの距離 */
+    left: 50%; /* 中央揃え */
+    transform: translateX(-50%); /* 中央揃えのための調整 */
+    width: 1440px; /* 幅 */
+    height: 190px; /* 高さ */
+    background: rgba(255, 255, 255, 0.80); /* 半透明の背景色 */
+    backdrop-filter: blur(7px); /* 背景ぼかし */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* 垂直中央揃え */
+    justify-content: flex-start; /* 左揃え */
+    padding: 20px; /* 内側の余白を追加 */
+    z-index: 1; /* 他の要素の上に表示 */
+}
+
+.text1 {
+    position: absolute; /* 絶対配置に変更 */
+    top: 50px; /* 上からの距離を50pxに設定 */
+    left: 40px; /* 左からの距離を40pxに設定 */
+    width: 664px; /* 幅を664pxに設定 */
+    height: 96px; /* 高さを96pxに追加 */
+    color: #1F1F1F; /* 黒色 */
+    font-family: 'Noto Sans JP', sans-serif; /* フォントファミリーを設定 */
+    font-size: 16px; /* フォントサイズを確認 */
+    font-weight: 400; /* フォントウェイトを400に設定 */
+    line-height: 32px; /* 行の高さを32pxに設定 */
+    white-space: normal; /* 改行を許可 */
+}
+
+.text2 {
+    position: absolute; /* 絶対配置に変更 */
+    top: 85px; /* 上からの距離を50pxに設定 */
+    left: 1224px; /* 左からの距離を40pxに設定 */
+    width: 664px; /* 幅を664pxに設定 */
+    color: #1F1F1F; /* 黒色 */
+    font-family: 'Noto Sans JP', sans-serif; /* フォントファミリーを設定 */
+    font-size: 16px; /* フォントサイズを確認 */
+    font-weight: 400; /* フォントウェイトを400に設定 */
+    line-height: 32px; /* 行の高さを32pxに設定 */
+    white-space: normal; /* 改行を許可 */
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../styles/Main.module.css';
+import Main1 from './Main1';
 
 const Main = () => {
     const menuItems = [
@@ -9,6 +10,22 @@ const Main = () => {
         { title: 'Works', subtitle: '開発事例' },
         { title: 'Contact', subtitle: 'お問い合わせ' }
     ];
+
+    const text1 = () => (
+        <p className={styles.text1}>
+            ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、
+            過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チームを提供します。
+        </p>
+    );
+
+    const text2 = () => (
+        <span className={styles.text2} style={{ display: 'flex', alignItems: 'center' }}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 8 14" fill="none" style={{ marginRight: '5px' }}>
+                <path d="M1 1L7 7L1 13" stroke="white" strokeWidth="1" />
+            </svg>
+            運営会社・ReAliceについて
+        </span>
+    );
 
     return (
         <main className={styles.mainContainer}>
@@ -32,6 +49,7 @@ const Main = () => {
                 for Unleashing<br />
                 Creativity
             </h1>
+
             <h1 className={styles.textOverlay}>
                 AI Technology<br />
                 for Unleashing<br />
@@ -44,7 +62,7 @@ const Main = () => {
 
             <div className={styles.imageWrapper}>
                 <img 
-                    src="/images/mailb.png" 
+                    images="/images/mailb.png" 
                     alt="Background" 
                     style={{
                         position: 'absolute',
@@ -61,9 +79,16 @@ const Main = () => {
                 </div>
             </div>
 
+            <div className={styles.transparentContainer}>
+                {text2()}
+                {text1()}
+            </div>
+
             <div className={styles.footerContainer}>
                 {/* ここにテキストコンテンツを追加予定 */}
             </div>
+
+            <Main1 />
         </main>
     );
 };
