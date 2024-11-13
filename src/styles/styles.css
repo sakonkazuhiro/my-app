@@ -40,11 +40,3 @@ body {
     overflow: hidden; /* はみ出しを隠す */
 }
 
-.hero-image {
-    background-image: url('public/images/sukusyo.png');
-    background-size: cover; /* 画像をカバーする */
-    background-position: center; /* 中央に配置 */
-    width: 100%;
-    height: 100%;
-    clip-path: inset(0 50% 0 0); /* 右半分を切り取る */
-}

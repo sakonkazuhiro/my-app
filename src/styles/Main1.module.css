@@ -12,11 +12,13 @@
     margin: 0 auto; /* 中央揃え */
     position: relative; /* 相対位置 */
     top: 969px; /* 上からの距離を969pxに設定 */
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .innerContainer {
     display: flex; /* フレックスボックスを使用 */
     width: 745px; /* 幅を745pxに設定 */
+    height: 279px; /* 高さを279pxに設定 */
     align-items: flex-start; /* 上揃え */
     gap: 80px; /* 要素間の間隔を80pxに設定 */
     position: absolute; /* 絶対配置に設定 */
@@ -44,7 +46,7 @@
     top: 58px; /* 上からの距離を58pxに設定 */
     left: 80px; /* 左からの距離を80pxに設定 */
     color: #1F1F1F; /* テキストの色 */
-    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 32px; /* フォントサイズ */
     font-style: normal; /* フォントスタイル */
     font-weight: 500; /* フォントウェイト */
@@ -63,11 +65,16 @@
     bottom: 173px; /* 下からの距離を173pxに設定 */
     transform: rotate(-90deg); /* テキストを-90度回転 */
     color: #1F1F1F; /* テキストの色 */
-    font-family: Jura; /* フォントファミリー */
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 60px; /* フォントサイズ */
     font-style: normal; /* フォントスタイル */
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
     opacity: 0.3; /* 不透明度 */
+}
+
+.Main1_rotatedText__FFwwC {
+    position: relative; /* 相対位置に設定 */
+    z-index: 1; /* 他の要素の上に表示 */
 }
 

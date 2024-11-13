@@ -33,6 +33,14 @@ const Main = () => {
                 src="/images/logo.svg" 
                 alt="ReAlice Logo" 
                 className={styles.logoImage}
+                style={{ 
+                    position: 'absolute',
+                    top: '44px',
+                    left: '62px',
+                    width: '140px',
+                    height: '28px',
+                    flexShrink: 0
+                }}
             />
 
             <nav className={styles.navigationContainer}>
@@ -60,21 +68,8 @@ const Main = () => {
                 創造力を引き出すAIテクノロジー
             </p>
 
-            <div className={styles.imageWrapper}>
-                <img 
-                    images="/images/mailb.png" 
-                    alt="Background" 
-                    style={{
-                        position: 'absolute',
-                        top: '72px',
-                        right: '646px',
-                        left: '184px',
-                        width: '406.737px',
-                        height: '765.771px',
-                        flexShrink: 0,
-                    }}
-                />
-                <div className={styles.backgroundMask}>
+            <div className={styles.imageWrapper}>    
+            <div className={styles.backgroundMask}>
                     <div className={styles.visibleArea}></div>
                 </div>
             </div>

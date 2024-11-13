@@ -1,21 +1,17 @@
+// my-app/src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import About from './pages/about';
-import Flow from './pages/flow';
-import './styles/globals.css';
+import './App.css';
+import Main from './components/Main'; // Mainコンポーネントをインポート
 
-const App = () => {
-    return (
-        <Router>
-            <Switch>
-                <Route path="/about" component={About} />
-                <Route path="/flow" component={Flow} />
-                <Route path="/" exact>
-                    <h1>ホームページ</h1>
-                </Route>
-            </Switch>
-        </Router>
-    );
-};
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        {/* 不要な画像を削除 */}
+        <Main /> {/* Mainコンポーネントを表示 */}
+      </header>
+    </div>
+  );
+}
 
 export default App;

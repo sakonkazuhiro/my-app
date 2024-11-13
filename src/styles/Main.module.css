@@ -11,7 +11,6 @@
     left: 795.47px; /* 左の位置 */
     right: 30.98px; /* 右の位置 */
     color: transparent; /* テキスト色を透明にする */
-    background-image: url('/images/huaki.png'); /* 背景画像のパスを指定 */
     background-size: cover;
     background-position: center 30px; /* 背景画像を少し上にずらす */
 
@@ -27,15 +26,6 @@
     opacity: 0.8; /* 背景画像の不透明度を上げる */
 }
 
-/* 上部の画像とテキストオーバーレイ */
-.hero-image {
-    background-image: url('/images/huaki.png'); /* 画像のを修正 */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-}
-
 /* メイン全体のレイアウト */
 .mainContainer {
     width: 1440px; /* 幅 */
@@ -43,17 +33,15 @@
     background: #F8F8F8; /* 背景色 */
     position: relative; /* 相対位置指定 */
 }
-
-/* その他のスタイルはそのまま保持 */
 /* 背景画像 */
 .backgroundImage {
     width: 700px; /* 幅を指定 */
     height: 700px; /* 高さを指定 */
     object-fit: cover;
     transform: rotate(90deg); /* 画像を90度回転して縦にする */
-    opacity: 0; /* 非表示 */
-    visibility: hidden; /* 完全に見えなくする */
-    }
+    opacity: 1; /* 表示するためにopacityを1に変更 */
+    visibility: visible; /* 表示するためにvisibilityをvisibleに変更 */
+}
 
 /* テキストのオーバーレイ */
 .textOverlay {
@@ -61,7 +49,7 @@
     top: 303px;
     right: 101px;
     width: 526px;
-    font-family: 'Jura', sans-serif; /* sansserifをフォールバックとして追加 */
+    font-family: 'Jura'; /* sansserifをフォールバックとして追加 */
     font-size: 66.947px;
     font-style: normal;
     font-weight: 700;
@@ -92,13 +80,13 @@
 .featuresTitle {
     font-size: 2rem;
     margin-bottom: 20px;
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Cursive';
 }
 
 .featuresDescription {
     font-size: 1.2rem;
     margin-bottom: 40px;
-    font-family: 'Cursive', sans-serif;
+    font-family: 'Cursive';
 }
 
 .featureCards {
@@ -141,7 +129,7 @@
 /* サブテキスト */
 .subtitle {
     color: #1F1F1F; /* 黒色 */    
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -175,7 +163,7 @@
     display: flex; /* フレックスボックスを使用 */
     gap: 76px; /* 各メニュー項目の間隔 */
     color: #1F1F1F; /* テキストの色 */
-    font-family: "Noto Sans JP", sans-serif; /* フォントファミリー */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
     font-size: 13px; /* フォントサイズ */
     font-style: normal; /* フォントスタイル */
     font-weight: 700; /* フォントウェイト */
@@ -202,7 +190,7 @@
 
 .infoText {
     color: #1F1F1F; /* テキストの色 */
-    font-family: "Noto Sans JP", sans-serif; /* フォントファミリー */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
     font-size: 16px; /* フォントサイズ */
     font-style: normal; /* フォントスタイル */
     font-weight: 500; /* フォントウェイト */
@@ -235,7 +223,7 @@
 .text-content p {
     font-size: 16px;
     font-weight: 500;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP";
     color: #1F1F1F; /* 黒文字 */
     letter-spacing: 2.88px;
     margin-top: 10px;
@@ -251,7 +239,7 @@
     right: 40px; /* 右からの距離を40pxに設定 */
     width: 664px; /* 幅を664pxに設定 */
     color: #1F1F1F; /* 黒色に変更 */
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP";
     font-size: 16px; /* フォントサイズを確認 */
     font-weight: 400; /* フォントウェイトを400に設定 */
     line-height: 32px; /* 行の高さを32pxに設定 */
@@ -264,7 +252,7 @@
     left: 40px; /* 左からの距離を40pxに設定 */
     width: 664px; /* 幅を664pxに設定 */
     color: #1F1F1F; /* 黒色 */
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP";
     font-size: 16px; /* フォントサイズを確認 */
     font-weight: 400; /* フォントウェイトを400に設定 */
     line-height: 32px; /* 行の高さを32pxに設定 */
@@ -302,47 +290,6 @@
     align-items: center;
 }
 
-.imageLeft, .imageRight {
-    position: absolute;
-    width: 45%; /* 画像の幅を調整 */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px; /* 隅を丸くする */
-    overflow: hidden;
-}
-
-/* 左側の画像（三角形を頂点を上に反転してleftに寄せる） */
-.imageLeft {
-    position: absolute;
-    top: 119px;
-    left: 0; /* leftに寄せる */
-    width: 685.428px;
-    height: 1229px;
-    background-image: url('/images/mailh.png');
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(50% 0, 100% 100%, 0 100%); /* 頂点が上、底辺が下の三角形 */
-    border-radius: 15px;
-}
-
-/* 右側の画像 */
-.imageRight {
-    right: 0;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%); /* 右半分の三角形 */
-    background-image: url('/images/mailb.png'); /* 右の画像パス */
-}
-
-/* 中央のライン */
-.center-line {
-    position: absolute;
-    width: 3px; /* ラインの幅を調整 */
-    height: 100%;
-    background-color: #EAD6D6; /* ラインの色を指定 */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
 
 .mainContainer {
     width: 1440px; /* 幅 */
@@ -351,16 +298,6 @@
     position: relative; /* 相対位置指定 */
 }
 
-.imageBackground {
-    position: absolute; /* 絶対配置 */
-    top: 278px; /* 上からの位置 */
-    right: 70px; /* 右からの位置 */
-    width: 613.551px; /* 幅 */
-    height: 976.316px; /* 高さ */
-    flex-shrink: 0; /* 縮小しない */
-    opacity: 0.8; /* 不透明度 */
-    background: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721 1.png') lightgray 50% / cover no-repeat; /* 画像背景 */
-}
 
 .headerContainer {
     width: 1440px; /* 幅 */
@@ -407,7 +344,6 @@
     line-height: normal;
     letter-spacing: -1.339px;
     color: transparent;
-    background-image: url('/images/daiki_studioprologue_nodedegitalvector_illusttextureComputer_in_019c20b6-d433-40e9-bd2e-0501e7899721 1.png');
     background-size: cover;
     background-position: center;
     -webkit-background-clip: text;
@@ -441,7 +377,7 @@
     right: 200px; /* leftをrightに変更 */
     top: 563px;
     color: #1F1F1F;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP';
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -479,7 +415,7 @@
 
 .menuTitle {
     color: #1F1F1F;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP";
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
@@ -489,7 +425,7 @@
 
 .menuSubtitle {
     color: #1F1F1F;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Noto Sans JP";
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -519,7 +455,7 @@
     display: flex; /* フレックスボックスを使用 */
     align-items: center; /* 垂直中央揃え */
     justify-content: flex-start; /* 左揃え */
-    padding: 20px; /* 内側の余白を追加 */
+    padding: 20px; /* 内側の余を追加 */
     z-index: 1; /* 他の要素の上に表示 */
 }
 
@@ -530,7 +466,7 @@
     width: 664px; /* 幅を664pxに設定 */
     height: 96px; /* 高さを96pxに追加 */
     color: #1F1F1F; /* 黒色 */
-    font-family: 'Noto Sans JP', sans-serif; /* フォントファミリーを設定 */
+    font-family: 'Noto Sans JP'; /* フォントファミリーを設定 */
     font-size: 16px; /* フォントサイズを確認 */
     font-weight: 400; /* フォントウェイトを400に設定 */
     line-height: 32px; /* 行の高さを32pxに設定 */
@@ -543,7 +479,7 @@
     left: 1224px; /* 左からの距離を40pxに設定 */
     width: 664px; /* 幅を664pxに設定 */
     color: #1F1F1F; /* 黒色 */
-    font-family: 'Noto Sans JP', sans-serif; /* フォントファミリーを設定 */
+    font-family: 'Noto Sans JP'; /* フォントファミリーを設定 */
     font-size: 16px; /* フォントサイズを確認 */
     font-weight: 400; /* フォントウェイトを400に設定 */
     line-height: 32px; /* 行の高さを32pxに設定 */

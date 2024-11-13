@@ -1,0 +1,67 @@
+/* Main2.module.css */
+
+.container {
+    position: relative; /* 相対配置 */
+}
+
+.title {
+    font-size: 24px; /* タイトルのスタイルを追加 */
+    color: #333; /* テキストカラーを指定 */
+}
+
+/* 背景の円のスタイル */
+.backgroundCircle {
+    position: absolute; /* 絶対配置 */
+    top: 1553px; /* 指定された位置 */
+    right: 295px; /* 指定された位置 */
+    left: 295px; /* 指定された位置 */
+    width: 850px; /* 幅 */
+    height: 850px; /* 高さ */
+    flex-shrink: 0; /* フレックス縮小を無効にする */
+    border-radius: 850px; /* 円形にする */
+    border: 1px solid #FFF; /* 白い境界線 */
+    opacity: 0.2; /* 透過度 */
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション */
+}
+
+/* 内側の円のスタイル */
+.innerCircle {
+    position: absolute; /* 絶対配置 */
+    top: calc(50% - 210px); /* 中心に配置 */
+    left: calc(50% - 210px); /* 中心に配置 */
+    width: 420px; /* 幅 */
+    height: 420px; /* 高さ */
+    flex-shrink: 0; /* フレックス縮小を無効にする */
+    border-radius: 420px; /* 円形にする */
+    border: 1px solid #FFF; /* 白い境界線 */
+    opacity: 0.2; /* 透過度 */
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション */
+}
+
+/* ボタンのスタイル */
+.button {
+    position: absolute; /* 絶対配置 */
+    top: 1858px; /* 指定された位置 */
+    right: 239px; /* 指定された位置 */
+    left: 220px; /* 指定された位置 */
+    width: 980px; /* 幅 */
+    height: 240px; /* 高さ */
+    flex-shrink: 0; /* フレックス縮小を無効にする */
+    border-radius: 850px; /* 円形にする */
+    border: 1px solid #FFF; /* 白い境界線 */
+    opacity: 0.2; /* 透過度 */
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション */
+}
+
+/* 正方形のスタイル */
+.square {
+    position: absolute; /* 絶対配置 */
+    top: 234px; /* 指定された位置 */
+    left: 347px; /* 指定された位置 */
+    width: 745px; /* 幅 */
+    height: 279px; /* 高さ */
+    background: rgb(241, 234, 234); /* 背景色 */
+    border-radius: 8px; /* 角を丸める */
+    padding: 20px; /* パディング */
+}
+
