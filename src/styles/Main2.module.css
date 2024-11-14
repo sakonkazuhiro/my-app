@@ -1,165 +1,47 @@
-/* Main2.module.css */
-
 .container {
     position: absolute; /* 絶対配置 */
-    top: 1836px; /* 上部から1836pxの位置 */
-    left: 50%; /* 中央に配置 */
-    transform: translateX(-50%); /* 中央揃え */
-    z-index: 1; /* 他の要素の上に表示 */
+    top: 1858px; /* 上からの位置 */
+    left: 220px; /* 左からの位置 */
 }
 
-.title {
-    font-size: 24px; /* タイトルのスタイルを追加 */
-    color: #333; /* テキストカラーを指定 */
-}
-
-/* 背景の円のスタイル */
-.backgroundCircle {
-    position: absolute; /* 絶対配置 */
-    top: calc(50% + 71px); /* 71px下に配置 */
-    left: 50%; /* 中央に配置 */
-    width: 850px; /* 幅 */
-    height: 850px; /* 高さ */
-    border-radius: 420px; /* 円形にする */
-    border: 1px solid #FFF; /* 白い枠線 */
-    opacity: 0.2; /* 不透明度 */
-    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション */
-    transform: translate(-50%, -50%); /* 中央揃え */
-    z-index: 0; /* 他の要素の下に表示 */
-}
-
-/* 内側の円のスタイル */
-.innerCircle {
-    position: absolute; /* 絶対配置 */
-    top: calc(50% + 71px); /* 71px下に配置 */
-    left: 50%; /* 中央に配置 */
-    width: 420px; /* 幅 */
-    height: 420px; /* 高さ */
-    border-radius: 210px; /* 円形にする */
-    border: 1px solid #FFF; /* 白い枠線 */
-    opacity: 0.5; /* 不透明度 */
-    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション */
-    transform: translate(-50%, -50%); /* 中央揃え */
-    z-index: 1; /* 他の要素の上に表示 */
-}
-
-/* 長方形のスタイル */
 .rectangle {
-    position: absolute; /* 絶対配置 */
-    top: 142px; /* 円の下に配置 */
-    left: 50%; /* 中央に配置 */
-    width: 980px; /* 幅 */
+    position: relative; /* 相対配置 */
+    width: 1000px; /* 幅 */
     height: 240px; /* 高さ */
-    border-radius: 8px; /* 角を丸める */
-    background: rgba(255, 0, 0, 0.5); /* 半透明の赤 */
-    transform: translate(-50%, -50%); /* 中央揃え */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white; /* テキストカラー */
-}
-
-/* 新しい長方形のスタイル */
-.newRectangle {
-    position: absolute; /* 絶対配置 */
-    top: 1836px; /* 上部から1836pxの位置 */
-    left: 50%; /* 中央に配置 */
-    width: 1440px; /* 幅 */
-    height: 280px; /* 高さ */
-    padding: 20px 220px; /* 上下20px、左右220pxのパディング */
-    background: rgba(0, 0, 0, 0.1); /* 半透明の背景色 */
-    border: 1px solid #000; /* 枠線 */
-    box-sizing: border-box; /* ボックスサイズをボーダーを含むように設定 */
-    transform: translateX(-50%); /* 中央揃え */
-}
-
-/* 正方形のスタイル */
-.square {
-    position: absolute; /* 絶対配置 */
-    top: 234px; /* 指定された位置 */
-    left: 347px; /* 指定された位置 */
-    width: 745px; /* 幅 */
-    height: 279px; /* 高さ */
-    background: rgb(241, 234, 234); /* 背景色 */
-    border-radius: 8px; /* 角を丸める */
-    padding: 20px; /* パディング */
-}
-
-.contact-section {
-    background-color: #F8F8F8;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh; /* 必要に応じて調整 */
-}
-
-.central-box {
-    width: 981px;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    flex-shrink: 0;
-    margin-top: 1836px; /* 上端からの位置 */
-}
-
-.circle {
-    width: 420px;
-    height: 420px;
-    border-radius: 50%;
-    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%);
-    position: absolute;
-    top: 0; /* 中央配置 */
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.inner-circle {
-    width: 20px; /* 円のサイズ */
-    height: 20px; /* 円のサイズ */
-    border-radius: 50%;
-    background-color: #FFF;
-    opacity: 0.2;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.text-container {
-    text-align: center;
-    position: relative;
-    z-index: 1; /* テキストを前面に */
-}
-
-.triangle-icon {
-    width: 39px;
-    height: 70px;
-    background-color: red; /* 赤い三角形の色 */
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* 三角形の形状 */
+    background-color: #E64646; /* 背景色 */
+    filter: drop-shadow(0px 4px 12px rgba(230, 70, 70, 0.24)); /* ドロップシャドウ */
 }
 
 .contactText {
-    color: #FFF; /* 白いテキスト */
-    font-family: Jura; /* フォントファミリー */
+    position: absolute; /* 絶対配置 */
+    top: 87px; /* 上からの位置 */
+    left: 426px; /* 左からの位置 */
+    color: #FFF; /* テキストの色 */
+    font-family: 'Jura'; /* フォントファミリー */
     font-size: 40px; /* フォントサイズ */
-    font-style: normal; /* フォントスタイル */
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
 }
 
 .inquiryText {
-    color: #FFF; /* 白いテキスト */
-    font-family: "Noto Sans JP"; /* フォントファミリー */
+    position: absolute; /* 絶対配置 */
+    top: 134px; /* 上からの位置 */
+    left: 458px; /* 左からの位置 */
+    color: #FFF; /* テキストの色 */
+    font-family: 'Noto Sans JP'; /* フォントファミリー */
     font-size: 14px; /* フォントサイズ */
-    font-style: normal; /* フォントスタイル */
     font-weight: 700; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
 }
 
+.icon {
+    position: absolute; /* 絶対配置 */
+    bottom: 10px; /* 下からの位置 */
+    right: 220px; /* 右からの位置 */
+    left: 1188px; /* 左からの位置 */
+    width: 32px; /* アイコンの幅 */
+    height: 32px; /* アイコンの高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #E64646; /* 背景色 */
+    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* ボックスシャドウ */
+}

@@ -11,80 +11,51 @@ const Main = () => {
         { title: 'Contact', subtitle: 'お問い合わせ' }
     ];
 
-    const text1 = () => (
-        <p className={styles.text1}>
-            ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、
-            過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チームを提供します。
-        </p>
-    );
-
-    const text2 = () => (
-        <span className={styles.text2} style={{ display: 'flex', alignItems: 'center' }}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 8 14" fill="none" style={{ marginRight: '5px' }}>
-                <path d="M1 1L7 7L1 13" stroke="white" strokeWidth="1" />
-            </svg>
-            運営会社・ReAliceについて
-        </span>
-    );
-
     return (
-        <main className={styles.mainContainer}>
+        <div className={styles.mainContainer}>
+            <div className={styles.topGradientContainer}></div>
+            <div className={styles.blurContainer}></div>
+            <p className={styles.descriptionText}>
+                ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、<br />
+                過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チーム<br />
+                を提供します。
+            </p>
+            <div className={styles.companyLink}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 8 14" fill="none">
+                    <path d="M1 1L7 7L1 13" stroke="white" strokeWidth="1"/>
+                </svg>
+                運営会社・ReAliceについて
+            </div>
+            <div className={styles.iconContainer}>
+                <img src="/images/Vector 20.svg" alt="アイコン" className={styles.icon} />
+            </div>
             <img 
                 src="/images/logo.svg" 
                 alt="ReAlice Logo" 
-                className={styles.logoImage}
-                style={{ 
-                    position: 'absolute',
-                    top: '44px',
-                    left: '62px',
-                    width: '140px',
-                    height: '28px',
-                    flexShrink: 0
-                }}
+                className={styles.headerLogo} 
             />
-
-            <nav className={styles.navigationContainer}>
+            <nav className={styles.headerNav}>
                 {menuItems.map((item, index) => (
-                    <div key={index} className={styles.menuItem}>
-                        <span className={styles.menuTitle}>{item.title}</span>
-                        <span className={styles.menuSubtitle}>{item.subtitle}</span>
+                    <div className={styles.navItem} key={index}>
+                        <span className={styles.navTitle}>{item.title}</span>
+                        <span className={styles.navSubtitle}>{item.subtitle}</span>
                     </div>
                 ))}
             </nav>
 
-            <h1 className={styles.textWithImageMask}>
-                AI Technology<br />
-                for Unleashing<br />
-                Creativity
-            </h1>
-
-            <h1 className={styles.textOverlay}>
-                AI Technology<br />
-                for Unleashing<br />
-                Creativity
-            </h1>
-
-            <p className={styles.japaneseText}>
-                創造力を引き出すAIテクノロジー
-            </p>
-
-            <div className={styles.imageWrapper}>    
-            <div className={styles.backgroundMask}>
-                    <div className={styles.visibleArea}></div>
-                </div>
-            </div>
-
-            <div className={styles.transparentContainer}>
-                {text2()}
-                {text1()}
-            </div>
-
-            <div className={styles.footerContainer}>
-                {/* ここにテキストコンテンツを追加予定 */}
+            <div className={styles.mainVisual}>
+                <h1 className={styles.mainTitle}>
+                    AI Technology<br />
+                    for Unleashing<br />
+                    Creativity
+                </h1>
+                <p className={styles.mainSubtitle}>
+                    創造力を引き出すAIテクノロジー
+                </p>
             </div>
 
             <Main1 />
-        </main>
+        </div>
     );
 };
 
