@@ -1,6 +1,11 @@
 import React from 'react';
 import styles from '../styles/Main.module.css';
 import Main1 from './Main1';
+import Main2 from './Main2';
+import Flow from './Flow';
+import main1Styles from '../styles/Main1.module.css';
+import main2Styles from '../styles/Main2.module.css';
+import flowStyles from '../styles/Flow.module.css';
 
 const Main = () => {
     const menuItems = [
@@ -20,20 +25,8 @@ const Main = () => {
                 過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チーム<br />
                 を提供します。
             </p>
-            <div className={styles.companyLink}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 8 14" fill="none">
-                    <path d="M1 1L7 7L1 13" stroke="white" strokeWidth="1"/>
-                </svg>
-                運営会社・ReAliceについて
-            </div>
-            <div className={styles.iconContainer}>
-                <img src="/images/Vector 20.svg" alt="アイコン" className={styles.icon} />
-            </div>
-            <img 
-                src="/images/logo.svg" 
-                alt="ReAlice Logo" 
-                className={styles.headerLogo} 
-            />
+
+            <img src="/images/logo.svg" alt="ReAlice Logo" className={styles.headerLogo} />
             <nav className={styles.headerNav}>
                 {menuItems.map((item, index) => (
                     <div className={styles.navItem} key={index}>
@@ -55,6 +48,9 @@ const Main = () => {
             </div>
 
             <Main1 />
+            <Main2 />
+            <Flow />
+
         </div>
     );
 };

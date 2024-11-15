@@ -1,47 +1,73 @@
-.container {
-    position: absolute; /* 絶対配置 */
-    top: 1858px; /* 上からの位置 */
-    left: 220px; /* 左からの位置 */
-}
-
-.rectangle {
-    position: relative; /* 相対配置 */
-    width: 1000px; /* 幅 */
-    height: 240px; /* 高さ */
-    background-color: #E64646; /* 背景色 */
-    filter: drop-shadow(0px 4px 12px rgba(230, 70, 70, 0.24)); /* ドロップシャドウ */
-}
-
-.contactText {
-    position: absolute; /* 絶対配置 */
-    top: 87px; /* 上からの位置 */
-    left: 426px; /* 左からの位置 */
-    color: #FFF; /* テキストの色 */
+.contactHeading {
+    position: absolute; /* 絶対位置指定 */
+    top: 1945px; /* 上からの位置 */
+    left: 646px; /* 左からの位置 */
+    color: #FFF; /* テキストカラー */
     font-family: 'Jura'; /* フォントファミリー */
     font-size: 40px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
     font-weight: 400; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    width: 148px; /* 幅 */
+    height: 47px; /* 高さ */
 }
 
-.inquiryText {
-    position: absolute; /* 絶対配置 */
-    top: 134px; /* 上からの位置 */
-    left: 458px; /* 左からの位置 */
-    color: #FFF; /* テキストの色 */
+.contactSubtext {
+    position: absolute; /* 絶対位置指定 */
+    top: 1992px; /* 上からの位置 */
+    left: 678px; /* 左からの位置 */
+    color: #FFF; /* テキストカラー */
     font-family: 'Noto Sans JP'; /* フォントファミリー */
     font-size: 14px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
     font-weight: 700; /* フォントウェイト */
     line-height: normal; /* 行の高さ */
+    width: 84px; /* 幅 */
+    height: 20px; /* 高さ */
 }
 
-.icon {
-    position: absolute; /* 絶対配置 */
-    bottom: 10px; /* 下からの位置 */
+.contactIcon {
+    position: absolute; /* 絶対位置指定 */
+    top: 2066px; /* 上からの位置 */
     right: 220px; /* 右からの位置 */
-    left: 1188px; /* 左からの位置 */
-    width: 32px; /* アイコンの幅 */
-    height: 32px; /* アイコンの高さ */
+    width: 32px; /* 幅 */
+    height: 32px; /* 高さ */
     flex-shrink: 0; /* 縮小しない */
     background: #E64646; /* 背景色 */
-    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* ボックスシャドウ */
+    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* シャドウ */
+}
+
+/* Contact Rectangle */
+.contactRectangle {
+    position: absolute; /* 絶対位置指定 */
+    top: 1858px; /* 上からの位置 */
+    left: 220px; /* 左からの位置 */
+    width: 1000px; /* 幅 */
+    height: 240px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+}
+
+/* 変形長方形 */
+.contactRectangleTransformed {
+    position: absolute; /* 絶対位置指定 */
+    top: 1858px; /* 上からの位置 */
+    left: 220px; /* 左からの位置 */
+    width: 981px; /* 幅 */
+    height: 240px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+}
+
+/* お問い合わせから開発のフローのスタイル */
+.flowText {
+    position: absolute; /* 絶対位置指定 */
+    top: 2309px; /* 上からの位置 */
+    left: 94px; /* 左からの位置 */
+    width: 1440px; /* 幅 */
+    height: 6748px; /* 高さ */
+    background: #F8F8F8; /* 背景色 */
+    color: #1F1F1F; /* テキストカラー（必要に応じて変更） */
+    font-family: "Noto Sans JP"; /* フォントファミリー（必要に応じて変更） */
+    font-size: 32px; /* フォントサイズ（必要に応じて変更） */
+    font-weight: 500; /* フォントウェイト（必要に応じて変更） */
+    line-height: normal; /* 行の高さ */
 }

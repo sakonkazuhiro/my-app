@@ -1,44 +1,407 @@
 .flowContainer {
-    position: relative; /* 相対配置に変更 */
-    top: 0; /* 上からの位置を調整 */
-    right: 0; /* 右からの位置をゼロに設定 */
-    width: 1440px; /* 幅 */
-    height: auto; /* 高さは自動 */
-    background: #F8F8F8; /* 背景色 */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* ボックスシャドウ（オプション） */
-    padding: 20px; /* 内側の余白 */
-    overflow: hidden; /* はみ出しを隠す */
+    position: relative;
+    width: 1440px;
+    height: 6748px;
 }
 
-.title {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-align: center; /* 中央揃え */
-    margin-bottom: 10px; /* 下の余白 */
+.flowTextContainer {
+    position: absolute;
+    top: 2309px;
+    left: 94px;
+    width: 532px;
+    height: 46px;
+    background: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.description {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-    -webkit-font-smoothing: antialiased;
-    text-align: center; /* 中央揃え */
-    margin-bottom: 20px; /* 下の余白 */
+.flowText {
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.4px;
 }
 
-.rectangle {
-    position: relative; /* 相対配置 */
-    width: 1052px; /* 幅 */
-    height: 324px; /* 高さ */
-    background: #E64646; /* 背景色 */
-    display: flex; /* フレックスボックスを使用 */
-    justify-content: center; /* 中央揃え */
-    align-items: center; /* 中央揃え */
+.imageContainer {
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 2435px;
+    right: 0;
+    z-index: 1000;
 }
 
-.image {
-    max-width: 100%; /* 幅を100%に設定 */
-    height: auto; /* 高さは自動 */
+.overlayContainer {
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 2435px;
+    left: 388px;
+    z-index: 1001;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+}
+
+.hearingText {
+    position: absolute;
+    top: 2511px;
+    left: 429px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    z-index: 1002;
+}
+
+.hearingDescription {
+    position: absolute;
+    top: 2551px;
+    left: 429px;
+    width: 248px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    z-index: 1002;
+}
+
+.backgroundElement {
+    width: 138px;
+    height: 324px;
+    flex-shrink: 0;
+    background: #5E2121;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 2435px;
+    left: 250px;
+    z-index: 999;
+}
+
+.numberText {
+    position: absolute;
+    top: 2568px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1002;
+}
+
+.imageContainer2 {
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 2799px;
+    right: 0;
+    z-index: 1000;
+}
+
+.overlayContainer2 {
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 2799px;
+    left: 388px;
+    z-index: 1001;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+}
+
+.backgroundElement2 {
+    width: 138px;
+    height: 324px;
+    flex-shrink: 0;
+    background: #5E2121;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 2799px;
+    left: 250px;
+    z-index: 999;
+}
+
+.designText {
+    position: absolute;
+    top: 2875px;
+    left: 429px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    z-index: 1002;
+}
+
+.designDescription {
+    position: absolute;
+    top: 2915px;
+    left: 429px;
+    width: 248px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    z-index: 1002;
+}
+
+.numberText2 {
+    position: absolute;
+    top: 2932px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1002;
+}
+
+.imageContainer3 {
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 3163px;
+    right: 0;
+    z-index: 1000;
+}
+
+.overlayContainer3 {
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 3163px;
+    left: 388px;
+    z-index: 1001;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+}
+
+.backgroundElement3 {
+    width: 138px;
+    height: 324px;
+    flex-shrink: 0;
+    background: #5E2121;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 3163px;
+    left: 250px;
+    z-index: 999;
+}
+
+.implementText {
+    position: absolute;
+    top: 3239px;
+    left: 429px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    z-index: 1002;
+}
+
+.implementDescription {
+    position: absolute;
+    top: 3279px;
+    left: 429px;
+    width: 248px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    z-index: 1002;
+}
+
+.numberText3 {
+    position: absolute;
+    top: 3296px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1002;
+}
+
+.imageContainer4 {
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 3528px;
+    right: 0;
+    z-index: 1000;
+}
+
+.overlayContainer4 {
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 3528px;
+    left: 388px;
+    z-index: 1001;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+}
+
+.backgroundElement4 {
+    width: 138px;
+    height: 324px;
+    flex-shrink: 0;
+    background: #5E2121;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 3528px;
+    left: 250px;
+    z-index: 999;
+}
+
+.testText {
+    position: absolute;
+    top: 3604px;
+    left: 429px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    z-index: 1002;
+}
+
+.testDescription {
+    position: absolute;
+    top: 3644px;
+    left: 429px;
+    width: 248px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    z-index: 1002;
+}
+
+.numberText4 {
+    position: absolute;
+    top: 3661px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1002;
+}
+
+.imageContainer5 {
+    width: 1052px;
+    height: 324px;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 3892px;
+    right: 0;
+    z-index: 1000;
+}
+
+.overlayContainer5 {
+    width: 400px;
+    height: 324px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 3892px;
+    left: 388px;
+    z-index: 1001;
+    opacity: 1;
+    backdrop-filter: blur(4px);
+}
+
+.backgroundElement5 {
+    width: 138px;
+    height: 324px;
+    flex-shrink: 0;
+    background: #5E2121;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 3892px;
+    left: 250px;
+    z-index: 999;
+}
+
+.operationText {
+    position: absolute;
+    top: 3968px;
+    left: 429px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 4px;
+    z-index: 1002;
+}
+
+.operationDescription {
+    position: absolute;
+    top: 4008px;
+    left: 429px;
+    width: 248px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    z-index: 1002;
+}
+
+.numberText5 {
+    position: absolute;
+    top: 4025px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1002;
 }
