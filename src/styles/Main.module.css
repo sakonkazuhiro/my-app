@@ -132,9 +132,12 @@
 
 /* アイコンスタイル */
 .iconContainer {
-    position: absolute;  /* 絶対位置指定 */
-    top: calc(778px + 89px);  /* グラデーションコンテナの高さ778px + 上から89px */
-    left: 1176px;        /* 右から245px */
+    position: absolute; /* 絶対位置を使用 */
+    top: 258px; /* サイト上部からの距離 */
+    left: 371px; /* サイト左からの距離 */
+    width: 64px; /* アイコンの幅 */
+    height: 64px; /* アイコンの高さ */
+    flex-shrink: 0; /* フレックスボックスの縮小を防ぐ */
 }
 
 .icon {
@@ -218,4 +221,28 @@
     font-size: 32px;
     font-weight: 500;
     letter-spacing: 6.4px;
+}
+
+.companyText {
+    position: absolute;
+    top: 79px; /* 上からの位置 */
+    right: 40px; /* 右からの位置 */
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center; /* 中央揃え */
+}
+
+.companyIcon {
+    position: absolute;
+    top: 79px; /* 上からの位置 */
+    right: 232px; /* 右からの位置 */
+    width: 32px; /* アイコンの幅 */
+    height: 32px; /* アイコンの高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: #E64646; /* アイコンの背景色 */
+    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* シャドウ */
 }

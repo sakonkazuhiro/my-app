@@ -24,15 +24,16 @@
 
 .serviceRotatedText {
     position: absolute;
-    top: 69px;
-    left: 53px;
+    top: 300px;
+    left: -190px;
     transform: rotate(-90deg);
-    transform-origin: left top;
     color: #1F1F1F;
-    font-size: 60px;
-    font-weight: 400;
-    opacity: 0.3;
     font-family: 'Jura';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.1;
 }
 
 .serviceList {

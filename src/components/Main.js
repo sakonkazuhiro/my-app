@@ -51,6 +51,14 @@ const Main = () => {
             <Main2 />
             <Flow />
 
+            <div className={styles.blurContainer}>
+                <div className={styles.companyText}>運営会社・ReAliceについて</div>
+                <img 
+                    src="/images/Vector 20.svg" 
+                    alt="アイコン" 
+                    className={styles.companyIcon} 
+                />
+            </div>
         </div>
     );
 };

@@ -6,7 +6,7 @@ const Flow = () => {
         <>
             <div className={styles.flowContainer}>
                 <div className={styles.flowTextContainer}>
-                    <div className={styles.flowText}>お問い合わせから開発のフロー</div>
+                <div className={styles.flowText}>お問い合わせから開発のフロー</div>
                 </div>
                 <div className={styles.backgroundElement}></div>
                 <img 
@@ -34,7 +34,9 @@ const Flow = () => {
                     リアリススタッフより、AIやアプリなどのシステム開発について、本質的な課題からヒアリングいたします。
                 </div>
                 <div className={styles.numberText}>01</div>
-                
+
+                <div className={styles.reAliceText}>ReAlice development flow.</div>
+
                 <div className={styles.backgroundElement2}></div>
                 <img 
                     src="/images/AdobeStock_264141758 1.png"
@@ -140,7 +142,7 @@ const Flow = () => {
                 </div>
                 <div className={styles.operationText}>運用・機能拡張</div>
                 <div className={styles.operationDescription}>
-                    納品した運用はもちろん、サービスの価値に即して必要な機能を定期的に増やしていきます。
+                    納した運用はもちろん、サービスの価値に即して必要な機能を定期的に増やしていきます。
                 </div>
                 <div className={styles.numberText5}>05</div>
             </div>

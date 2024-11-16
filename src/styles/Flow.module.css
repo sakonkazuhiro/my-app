@@ -1,15 +1,10 @@
-.flowContainer {
-    position: relative;
-    width: 1440px;
-    height: 6748px;
-}
 
 .flowTextContainer {
     position: absolute;
     top: 2309px;
     left: 94px;
-    width: 532px;
-    height: 46px;
+    width: 540px;
+    height: 50px;
     background: #F8F8F8;
     display: flex;
     justify-content: center;
@@ -404,4 +399,18 @@
     font-weight: 400;
     line-height: normal;
     z-index: 1002;
+}
+
+.reAliceText {
+    position: absolute;
+    top: 2650px;
+    left: -285px;
+    transform: rotate(-90deg);
+    color: #1F1F1F;
+    font-family: 'Jura';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.1;
 }
