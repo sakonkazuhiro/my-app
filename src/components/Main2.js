@@ -31,6 +31,14 @@ const Main2 = () => {
             </div>
 
             <div className={styles.flowImageContainer}></div>
+
+            <div className={styles.circleOverlay}></div>
+
+            <div className={styles.circleContainer}></div>
+
+            <div className={styles.circle}></div>
+
+            <div className={styles.innerCircle}></div>
         </>
     );
 };

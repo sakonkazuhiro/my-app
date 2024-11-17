@@ -49,6 +49,13 @@ const Main = () => {
 
             <Main1 />
             <Main2 />
+
+            <div className={styles.iconContainer}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                    <path d="M1 1L5 6L1 11" stroke="white" strokeWidth="1"/>
+                </svg>
+            </div>
+
             <Flow />
 
             <div className={styles.blurContainer}>

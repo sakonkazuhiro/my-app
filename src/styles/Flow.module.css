@@ -1,4 +1,3 @@
-
 .flowTextContainer {
     position: absolute;
     top: 2309px;
@@ -414,3 +413,93 @@
     line-height: normal;
     opacity: 0.1;
 }
+
+.newContainer {
+    position: absolute;
+    bottom: 700px;
+    right: -285px;
+    width: 2422px;
+    height: 1017px;
+    transform: rotate(-90deg);
+    flex-shrink: 0;
+    opacity: 0.2;
+    background: linear-gradient(238deg, #E64646 0%, rgba(230, 70, 70, 0.00) 46.48%);
+}
+
+.caseTextContainer {
+    position: absolute;
+    top: 4396px;
+    left: 115px;
+    width: 224px;
+    height: 46px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 6.4px;
+    background: transparent;
+    opacity: 1;
+    white-space: nowrap;
+}
+
+.examplesTextContainer {
+    position: absolute;
+    bottom: 1859px;
+    left: -345px;
+    transform: rotate(-90deg);
+    color: #1F1F1F;
+    font-family: 'Jura';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.1;
+}
+
+.imageBackgroundContainer {
+    position: absolute;
+    bottom: 1557px;
+    left: 188px;
+    width: 407px;
+    height: 669px;
+    flex-shrink: 0;
+    background: url('') lightgray -386.825px -115px / 342.452% 117.19% no-repeat;
+}
+
+.customBox {
+    position: absolute;
+    bottom: 1904px;
+    right: 335px;
+    width: 518px;
+    height: 230px;
+    flex-shrink: 0;
+    fill: #E64646;
+}
+
+.numberText1 {
+    position: absolute;
+    bottom: 2150px;
+    left: 635px;
+    color: #E64646;
+    font-family: 'Jura';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.conversationSystemText {
+    position: absolute;
+    bottom: 2003px;
+    right: 578px;
+    width: 227px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+

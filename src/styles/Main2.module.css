@@ -45,7 +45,7 @@
     width: 1024px; /* 幅を1024pxに変更 */
     height: 264px; /* 高さを264pxに変更 */
     flex-shrink: 0; /* 縮小しない */
-    fill: #E64646; /* 背景色 */
+    fill: rgba(230, 70, 70, 0.8); /* 背景色を透過させる */
     filter: drop-shadow(0px 4px 12px rgba(230, 70, 70, 0.24)); /* シャドウ */
 }
 
@@ -86,4 +86,31 @@
     display: flex; /* 中央揃えのためにフレックスボックスを使用 */
     justify-content: center; /* 横方向の中央揃え */
     align-items: center; /* 縦方向の中央揃え */
+}
+
+.circle {
+    position: absolute; /* 絶対位置指定 */
+    top: 1553px; /* サイトのトップから1553pxの位置 */
+    left: calc(50% - 424.567px); /* サイトの中心に配置（849.134px / 2） */
+    width: 849.134px; /* 幅 */
+    height: 850px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    border-radius: 850px; /* 円形にする */
+    border: 1px solid #FFF; /* 白いボーダー */
+    opacity: 0.2; /* 不透明度を薄くする */
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション背景 */
+}
+
+/* 内側の円のスタイル */
+.innerCircle {
+    position: absolute; /* 絶対位置指定 */
+    top: calc(1553px + 215px); /* 外側の円の中心から215px下に配置 */
+    left: calc(50% - 209.786px); /* サイトの中心に配置（419.572px / 2） */
+    width: 419.572px; /* 幅 */
+    height: 420px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    border-radius: 420px; /* 円形にする */
+    border: 1px solid #FFF; /* 白いボーダー */
+    opacity: 0.2; /* 不透明度を薄くする */
+    background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション背景 */
 }

@@ -38,10 +38,12 @@
 
 .serviceList {
     display: flex;
+    width: 745px;
+    align-items: flex-start;
     gap: 80px;
     position: absolute;
     top: 234px;
-    left: 347px;
+    left: 347.5px;
 }
 
 .serviceSection {
@@ -70,14 +72,16 @@
     top: 60px;
     left: 15px;
     color: #1F1F1F;
+    font-family: "Noto Sans JP";
     font-size: 40px;
     font-weight: 400;
+    line-height: 1;
 }
 
 .serviceDescription {
     position: absolute;
     top: 171px;
-    left: 24px;
+    left: 25px;
     width: 195px;
     color: #1F1F1F;
     font-size: 16px;
@@ -95,5 +99,84 @@
     top: 0;
     left: 0;
     z-index: 0;
+}
+
+.dxTitle {
+    position: absolute;
+    top: 96px;
+    left: 24px;
+}
+
+.dxDescription {
+    position: absolute;
+    left: 24px;
+    bottom: 50px;
+    width: 195px;
+    color: #1F1F1F;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.automationTitle {
+    position: absolute;
+    top: 96px;
+    left: 24px;
+}
+
+.automationDescription {
+    position: absolute;
+    left: 29px;
+    bottom: 32px;
+    width: 195px;
+    color: #1F1F1F;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.entertainmentTitle {
+    position: absolute;
+    top: 96px;
+    left: 24px;
+    right: 28px;
+}
+
+.entertainmentDescription {
+    position: absolute;
+    left: 29px;
+    bottom: 32px;
+    width: 195px;
+    color: #1F1F1F;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.dxIcon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 63px;
+    height: 63px;
+    flex-shrink: 0;
+}
+
+.automationIcon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 63px;
+    height: 63px;
+    flex-shrink: 0;
+}
+
+.entertainmentIcon {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    width: 63px;
+    height: 63px;
+    flex-shrink: 0;
 }
 
