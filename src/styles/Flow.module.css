@@ -69,6 +69,7 @@
     font-weight: 400;
     line-height: 32px;
     z-index: 1002;
+    text-align: left; /* 左寄せ */
 }
 
 .backgroundElement {
@@ -157,12 +158,26 @@
     font-weight: 400;
     line-height: 32px;
     z-index: 1002;
+    text-align: left; /* 左寄せ */
+}
+
+.numberText6 {
+    position: absolute;
+    top: 2932px;
+    left: 296px;
+    color: #FFF;
+    font-family: 'Jura';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1002;
 }
 
 .numberText2 {
     position: absolute;
     bottom: 1401px;
-    left: 337px;
+    left: 296px;
     color: #E64646;
     font-family: 'Jura';
     font-size: 64px;
@@ -232,6 +247,7 @@
     font-weight: 400;
     line-height: 32px;
     z-index: 1002;
+    text-align: left; /* 左寄せ */
 }
 
 .numberText3 {
@@ -308,6 +324,7 @@
     font-weight: 400;
     line-height: 32px;
     z-index: 1002;
+    text-align: left; /* 左寄せ */
 }
 
 .numberText4 {
@@ -384,6 +401,8 @@
     font-weight: 400;
     line-height: 32px;
     z-index: 1002;
+    text-align: left; /* 左寄せ */
+    
 }
 
 .numberText5 {

@@ -33,6 +33,7 @@ const Flow = () => {
                 <div className={styles.hearingDescription}>
                     リアリススタッフより、AIやアプリなどのシステム開発について、本質的な課題からヒアリングいたします。
                 </div>
+                <div className={styles.numberText}>01</div>
                 <div className={styles.reAliceText}>ReAlice development flow.</div>
 
                 <div className={styles.backgroundElement2}></div>
@@ -63,7 +64,7 @@ const Flow = () => {
                     ヒアリングした内容をもと、<br />
                     開発に必要な仕様やステップを設計していきます。
                 </div>
-                <div className={styles.numberText2}>02</div>
+                <div className={styles.numberText6}>02</div>
                 
                 <div className={styles.reAliceText}>ReAlice development flow.</div>
                 
@@ -185,10 +186,26 @@ const Flow = () => {
                 </div>
                 <div className={styles.companyNameText}>ナカムラロジスティクス株式会社</div>
                 <div className={styles.descriptionDetailText}>
-                    実際の業務のヒアリングから行い、AIのOCRシステムを活用して伝票の読み取り工数を自動化した。<br />
+                    実際の業務のヒリングから行い、AIのOCRシステムを活用して伝票の読み取り工数を自動化した。<br />
                     最大8名いた作業員を2名にまで削減
                 </div>
             </div>
+            <div 
+                className={styles.backgroundImage} 
+                style={{ 
+                    backgroundImage: `url('/images/AdobeStock_734952265 1.png')`, 
+                    backgroundColor: '#F8F8F8', 
+                    backgroundPosition: 'center',
+                    backgroundSize: 'contain',
+                    zIndex: 1100,
+                    position: 'absolute',
+                    top: '4522px',
+                    left: '188px',
+                    width: '407px',
+                    height: '669px',
+                    flexShrink: 0
+                }} 
+            />
         </>
     );
 };

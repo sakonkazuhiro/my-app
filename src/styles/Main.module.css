@@ -198,3 +198,20 @@
     fill: #EAD6D6; /* 塗りの色 */
     z-index: 0; /* 他のコンテナの下に配置 */
 }
+
+/* メイン画像2のスタイル */
+.secondaryImage {
+    position: absolute;
+    top: 72px; /* 上からの位置 */
+    left: 184px; /* 左からの位置 */
+    width: 610px; /* 幅 */
+    height: 874px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    background: lightgray; /* 背景色 */
+    z-index: 0; /* 他のコンテナの下に配置 */
+}
+
+/* メイン画像2を隠すためのスタイル */
+.hidden {
+    display: none; /* 要素を非表示にする */
+}

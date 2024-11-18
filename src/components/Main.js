@@ -26,9 +26,11 @@ const Main = () => {
                 className={styles.mainImage} 
             />
 
-            <div className={styles.blurOverlay}></div>
-
-            <div className={styles.secondaryContainer}></div>
+            <img 
+                src="/images/AdobeStock_482578482 (1) 1.png" 
+                alt="メイン画像2" 
+                className={`${styles.secondaryImage} ${styles.hidden}`} 
+            />
 
             <p className={styles.descriptionText}>
                 ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、<br />
