@@ -9,6 +9,19 @@
     background: #F8F8F8;
     position: relative;
     margin: 0 auto;
+    overflow: hidden; /* コンテナ内の要素がはみ出さないようにする */
+}
+
+/* テキストの背景画像を設定 */
+.textBackground {
+    position: absolute;
+    top: 25.45px; /* 上からの位置 */
+    right: 30.98px; /* 右からの位置 */
+    width: 613.551px; /* 幅 */
+    height: 976.316px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    opacity: 0.8; /* 不透明度 */
+    background: url('') lightgray 50% / cover no-repeat; /* 背景画像 */
 }
 
 /* ヘッダーロゴ */
@@ -31,25 +44,25 @@
     z-index: 1000;
 }
 
-.navItem {
+.menuLink {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
 }
 
 .navTitle {
-    color: #1F1F1F;
-    font-family: "Noto Sans JP";
-    font-size: 13px;
-    font-weight: 700;
-    margin-bottom: 4px;
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 13px; /* フォントサイズ */
+    font-weight: 700; /* フォントウェイト */
+    margin-bottom: 4px; /* 英語と日本語の間隔 */
 }
 
 .navSubtitle {
-    color: #1F1F1F;
-    font-family: "Noto Sans JP";
-    font-size: 13px;
-    font-weight: 400;
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 13px; /* フォントサイズ */
+    font-weight: 400; /* フォントウェイト */
 }
 
 /* メインビジュアル */
@@ -64,7 +77,7 @@
     font-family: 'Jura';
     font-size: 66.947px;
     font-weight: 700;
-    letter-spacing: -1.339px;
+    letter-spacing: -1.39px;
     color: #E85959;
 }
 
@@ -89,19 +102,6 @@
     left: 40px;   /* 左から40px */
     z-index: 2;   /* ブラーコンテナの上に表示 */
     text-align: left; /* テキストの頭を左揃えに */
-}
-
-/* 会社リンク */
-.companyLink {
-    position: absolute;
-    top: 890px;
-    left: 388px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: white;
-    font-family: 'Noto Sans JP';
-    font-size: 16px;
 }
 
 /* 最上部のグラデーションコンテナ */
@@ -130,16 +130,6 @@
     z-index: 0;
 }
 
-/* アイコンスタイル */
-.iconContainer {
-    position: absolute; /* 絶対位置を使用 */
-    top: 258px; /* サイト上部からの距離 */
-    left: 371px; /* サイト左からの距離 */
-    width: 64px; /* アイコンの幅 */
-    height: 64px; /* アイコンの高さ */
-    flex-shrink: 0; /* フレックスボックスの縮小を防ぐ */
-}
-
 .icon {
     width: 6px; /* 幅を6pxに設定 */
     height: 12px; /* 高さを12pxに設定 */
@@ -147,33 +137,9 @@
     stroke-width: 1px; /* ストロークの幅を1pxに設定 */
     stroke: #FFF; /* ストロークの色を白に設定 */
 }
-
-/* 運営会社テキストスタイル */
-.companyLink {
-    position: absolute;  /* 絶対位置指定 */
-    top: calc(778px + 85px);  /* グラデーションコンテナの高さ778px + 上から85px */
-    left: 1224px;         /* 右から40px */
-    color: #1F1F1F;      /* テキストカラー */
-    font-family: "Noto Sans JP";  /* フォントファミリー */
-    font-size: 14px;     /* フォントサイズ */
-    font-style: normal;  /* フォントスタイル */
-    font-weight: 700;    /* フォントウェイト */
-    line-height: normal; /* 行の高さ */
-}
-
 /* 以下、その他の必要なスタイル定義 */
 
 /* Contact Section */
-.contactSection {
-    position: relative;
-    top: 2066px;
-    left: 220px;
-    width: 1000px;
-    height: 240px;
-    background-color: #E64646;
-    filter: drop-shadow(0px 4px 12px rgba(230, 70, 70, 0.24));
-}
-
 .contactText {
     position: absolute;
     top: 87px;
@@ -182,45 +148,6 @@
     font-family: 'Jura';
     font-size: 40px;
     font-weight: 400;
-}
-
-.inquiryText {
-    position: absolute;
-    top: 134px;
-    left: 458px;
-    color: #FFF;
-    font-family: 'Noto Sans JP';
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.contactIcon {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
-    background: #E64646;
-    box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16);
-}
-
-
-.flowImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.flowText {
-    position: absolute;
-    top: 2480px;
-    left: 94px;
-    color: #1F1F1F;
-    font-family: "Noto Sans JP";
-    font-size: 32px;
-    font-weight: 500;
-    letter-spacing: 6.4px;
 }
 
 .companyText {
@@ -238,11 +165,36 @@
 
 .companyIcon {
     position: absolute;
-    top: 79px; /* 上からの位置 */
+    top: 74px; /* 上からの位置 */
     right: 232px; /* 右からの位置 */
     width: 32px; /* アイコンの幅 */
     height: 32px; /* アイコンの高さ */
-    flex-shrink: 0; /* 縮小しない */
+    flex-shrink: 1; /* 縮小しない */
     background: #E64646; /* アイコンの背景色 */
     box-shadow: 0px 4px 12px 0px rgba(230, 70, 70, 0.16); /* シャドウ */
+}
+
+.menuLinks {
+    display: inline-flex; /* インラインフレックスで配置 */
+    align-items: center; /* 中央揃え */
+    gap: 40px; /* リンク間の間隔 */
+}
+
+.menuLink {
+    color: #494949; /* テキストカラー */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-weight: 400; /* フォントウェイト */
+}
+
+/* メイン画像のスタイル */
+.mainImage {
+    position: absolute;
+    top: 0; /* 上からの位置を0に設定 */
+    left: 70px; /* 左からの位置 */
+    width: 685.428px; /* 幅 */
+    height: 1229px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #EAD6D6; /* 塗りの色 */
+    z-index: 0; /* 他のコンテナの下に配置 */
 }

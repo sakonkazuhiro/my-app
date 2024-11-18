@@ -1,0 +1,89 @@
+.footer {
+    position: absolute;
+    bottom: 20px; /* 下からの位置 */
+    left: 20px; /* 左からの位置 */
+    right: 20px; /* 右からの位置 */
+    width: 1400px; /* 幅 */
+    height: 325px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #FFF; /* 塗りつぶしの色 */
+}
+
+.logo {
+    position: absolute;
+    top: 52px; /* 上からの位置 */
+    left: 68px; /* 左からの位置 */
+    width: 140px; /* 幅 */
+    height: 28px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+}
+
+
+.footerLinks {
+    position: absolute;
+    top: 162px; /* 上からの位置 */
+    left: 80px; /* 左からの位置 */
+    display: inline-flex; /* インラインフレックスで配置 */
+    align-items: center; /* 中央揃え */
+    gap: 40px; /* リンク間の間隔 */
+}
+
+.menuLink {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+}
+
+.footerLinkEnglish {
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 13px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    margin-bottom: 6px; /* 英語と日本語の間隔 */
+}
+
+.footerLinkJapanese {
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 13px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}
+
+.siteInfo {
+    position: absolute;
+    left: 68px; /* 左からの位置 */
+    bottom: 35px; /* 下からの位置 */
+    color: #1F1F1F; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 14px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}
+
+.icon {
+    position: absolute;
+    left: 201px; /* 左からの位置 */
+    bottom: 52px; /* 下からの位置 */
+    width: 6px; /* 幅 */
+    height: 12px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    stroke-width: 1px; /* ストロークの幅 */
+    stroke: #1F1F1F; /* ストロークの色 */
+}
+
+.copyright {
+    position: absolute;
+    right: 77px; /* 右からの位置 */
+    bottom: 35px; /* 下からの位置 */
+    color: #919191; /* テキストの色 */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 14px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}

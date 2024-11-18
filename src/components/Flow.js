@@ -168,6 +168,26 @@ const Flow = () => {
                 <div className={styles.conversationSystemText}>
                     AIキャラクターとの会話システムの開発
                 </div>
+                <div className={styles.companyText}>DeNA株式会社</div>
+                <div className={styles.descriptionText}>
+                    AIでできることを現時点の技術で把握し、新規事業に活かしていきたいという要望を小規模の開発でPOCを短サイクルで実現。AI音声と音声+モーションの技術で価値提供を行なった。
+                </div>
+                <div className={styles.imageContainer6}></div>
+                <div className={styles.numberText2}>02</div>
+
+                <div className={styles.redBox}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="648" height="230" viewBox="0 0 648 230" fill="none">
+                        <path d="M648 -0.000534058L648 230L121.711 229.999L0.590618 7.65382C-1.5049 4.28495 2.26701 0.073848 7.29624 0.0738475L648 -0.000534058Z" fill="#E64646"/>
+                    </svg>
+                </div>
+                <div className={styles.ocrSystemText}>
+                    AI OCRシステムを活用した帳票読み取りの自動化
+                </div>
+                <div className={styles.companyNameText}>ナカムラロジスティクス株式会社</div>
+                <div className={styles.descriptionDetailText}>
+                    実際の業務のヒアリングから行い、AIのOCRシステムを活用して伝票の読み取り工数を自動化した。<br />
+                    最大8名いた作業員を2名にまで削減
+                </div>
             </div>
         </>
     );

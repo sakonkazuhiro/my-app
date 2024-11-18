@@ -161,15 +161,14 @@
 
 .numberText2 {
     position: absolute;
-    top: 2932px;
-    left: 296px;
-    color: #FFF;
+    bottom: 1401px;
+    left: 337px;
+    color: #E64646;
     font-family: 'Jura';
-    font-size: 48px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    z-index: 1002;
 }
 
 .imageContainer3 {
@@ -501,5 +500,91 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.companyText {
+    position: absolute;
+    bottom: 1964px;
+    left: 635px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.descriptionText {
+    position: absolute;
+    bottom: 1768px;
+    right: 252px;
+    width: 553px;
+    color: #1F1F1F;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+}
+
+.imageContainer6 {
+    position: absolute;
+    bottom: 806px;
+    right: 252px;
+    width: 407px;
+    height: 671px;
+    flex-shrink: 0;
+    background: url('') lightgray -157.378px 0px / 247.267% 100% no-repeat;
+}
+
+.redBox {
+    position: absolute;
+    bottom: 1155px;
+    left: 180px;
+    width: 648px;
+    height: 230px;
+    flex-shrink: 0;
+    fill: #E64646;
+}
+
+.ocrSystemText {
+    position: absolute;
+    bottom: 1254px;
+    left: 337px;
+    width: 296px;
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left; /* 左寄せ */
+}
+
+.companyNameText {
+    position: absolute;
+    bottom: 1215px; /* 下からの位置 */
+    left: 337px; /* 左からの位置 */
+    color: #FFF; /* テキストカラー */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+}
+
+.descriptionDetailText {
+    position: absolute;
+    bottom: 1019px; /* 下からの位置 */
+    left: 337px; /* 左からの位置 */
+    width: 382px; /* 幅 */
+    color: #1F1F1F; /* テキストカラー */
+    font-family: "Noto Sans JP"; /* フォントファミリー */
+    font-size: 16px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: 32px; /* 行の高さ */
+    text-align: left; /* 左寄せ */
 }
 

@@ -50,55 +50,9 @@
     position: relative;
     width: 155px;
     height: 279px;
-}
-
-.serviceSvg {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.serviceTitleDx {
-    position: absolute;
-    top: 50px;
-    right: 80px;
-    color: #1F1F1F;
-    font-size: 50px;
-    font-weight: 400;
-}
-
-.serviceTitle {
-    position: absolute;
-    top: 60px;
-    left: 15px;
-    color: #1F1F1F;
-    font-family: "Noto Sans JP";
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 1;
-}
-
-.serviceDescription {
-    position: absolute;
-    top: 171px;
-    left: 25px;
-    width: 195px;
-    color: #1F1F1F;
-    font-size: 16px;
-    font-weight: 400;
-    text-align: left;
-}
-
-.gradientContainer {
-    width: 1440px;
-    height: 778px;
-    flex-shrink: 0;
-    opacity: 0.2;
-    background: linear-gradient(238deg, #E64646 0%, rgba(230, 70, 70, 0.00) 46.48%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-right: 33px;
 }
 
 .dxTitle {
@@ -116,6 +70,7 @@
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+    margin-right: 18px;
 }
 
 .automationTitle {
@@ -133,6 +88,7 @@
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+    margin-right: 18px;
 }
 
 .entertainmentTitle {
@@ -151,6 +107,7 @@
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+    margin-right: 18px;
 }
 
 .dxIcon {

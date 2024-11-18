@@ -3,9 +3,7 @@ import styles from '../styles/Main.module.css';
 import Main1 from './Main1';
 import Main2 from './Main2';
 import Flow from './Flow';
-import main1Styles from '../styles/Main1.module.css';
-import main2Styles from '../styles/Main2.module.css';
-import flowStyles from '../styles/Flow.module.css';
+import Footer from './Footer';
 
 const Main = () => {
     const menuItems = [
@@ -18,8 +16,20 @@ const Main = () => {
 
     return (
         <div className={styles.mainContainer}>
+            <div className={styles.textBackground}></div>
             <div className={styles.topGradientContainer}></div>
             <div className={styles.blurContainer}></div>
+            
+            <img 
+                src="/images/AdobeStock_175818257 1.png" 
+                alt="メイン画像" 
+                className={styles.mainImage} 
+            />
+
+            <div className={styles.blurOverlay}></div>
+
+            <div className={styles.secondaryContainer}></div>
+
             <p className={styles.descriptionText}>
                 ReAlice Lab（仮）は、サービスのプレゼンスをあげるためにAIの力を最大限に活かし、<br />
                 過去実績から培った知見と高度な技術力で、クリエイティブなAI体験を実現する開発チーム<br />
@@ -28,12 +38,14 @@ const Main = () => {
 
             <img src="/images/logo.svg" alt="ReAlice Logo" className={styles.headerLogo} />
             <nav className={styles.headerNav}>
-                {menuItems.map((item, index) => (
-                    <div className={styles.navItem} key={index}>
-                        <span className={styles.navTitle}>{item.title}</span>
-                        <span className={styles.navSubtitle}>{item.subtitle}</span>
-                    </div>
-                ))}
+                <div className={styles.menuLinks}>
+                    {menuItems.map((item, index) => (
+                        <div className={styles.menuLink} key={index}>
+                            <a href="#" className={styles.navTitle}>{item.title}</a>
+                            <a href="#" className={styles.navSubtitle}>{item.subtitle}</a>
+                        </div>
+                    ))}
+                </div>
             </nav>
 
             <div className={styles.mainVisual}>
@@ -66,6 +78,8 @@ const Main = () => {
                     className={styles.companyIcon} 
                 />
             </div>
+
+            <Footer />
         </div>
     );
 };
