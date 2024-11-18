@@ -114,3 +114,58 @@
     opacity: 0.2; /* 不透明度を薄くする */
     background: radial-gradient(50% 50% at 50% 50%, #E64646 0%, #E64646 90%, #EDBBBB 100%); /* グラデーション背景 */
 }
+
+.vectorImageNew {
+    position: absolute; /* 絶対位置指定 */
+    top: 1915px; /* 上からの位置 */
+    right: 398.16px; /* 右からの位置 */
+    width: 136.536px; /* 幅 */
+    height: 245px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #C24444; /* 塗りの色 */
+    opacity: 0.5; /* 不透明度を薄くする */
+}
+
+.newVectorImage {
+    position: absolute; /* 絶対位置指定 */
+    top: 1960px; /* 上からの位置 */
+    right: 418.76px; /* 右からの位置 */
+    width: 80.913px; /* 幅 */
+    height: 152.614px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #C24444; /* 塗りの色 */
+    opacity: 0.5; /* 不透明度を薄くする */
+}
+
+.newVectorImage2 {
+    position: absolute; /* 絶対位置指定 */
+    top: 1915px; /* 上からの位置 */
+    right: 354.49px; /* 右からの位置 */
+    width: 37.333px; /* 幅 */
+    height: 244.533px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #C24444; /* 塗りの色 */
+    opacity: 0.5; /* 不透明度を薄くする */
+}
+
+.newVectorImage3 {
+    position: absolute; /* 絶対位置指定 */
+    top: 1968px; /* 上からの位置 */
+    right: 267.81px; /* 右からの位置 */
+    width: 57.69px; /* 幅 */
+    height: 57.195px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #C24444; /* 塗りの色 */
+    opacity: 0.5; /* 不透明度を薄くする */
+}
+
+.newVectorImage4 {
+    position: absolute; /* 絶対位置指定 */
+    top: 2037.51px; /* 上からの位置 */
+    right: 267.81px; /* 右からの位置 */
+    width: 57.69px; /* 幅 */
+    height: 56.75px; /* 高さ */
+    flex-shrink: 0; /* 縮小しない */
+    fill: #C24444; /* 塗りの色 */
+    opacity: 0.5; /* 不透明度を薄くする */
+}

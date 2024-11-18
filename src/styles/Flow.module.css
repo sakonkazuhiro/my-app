@@ -476,16 +476,6 @@
     opacity: 0.1;
 }
 
-.imageBackgroundContainer {
-    position: absolute;
-    bottom: 1557px;
-    left: 188px;
-    width: 407px;
-    height: 669px;
-    flex-shrink: 0;
-    background: url('') lightgray -386.825px -115px / 342.452% 117.19% no-repeat;
-}
-
 .customBox {
     position: absolute;
     bottom: 1904px;
@@ -554,7 +544,6 @@
     width: 407px;
     height: 671px;
     flex-shrink: 0;
-    background: url('') lightgray -157.378px 0px / 247.267% 100% no-repeat;
 }
 
 .redBox {
@@ -607,3 +596,43 @@
     text-align: left; /* 左寄せ */
 }
 
+
+
+.redRectangleBox {
+    position: absolute; /* 絶対位置指定 */
+    bottom: 455px; /* 下からの位置 */
+    left: 220px; /* 左からの位置 */
+    width: 1024px; /* 幅 */
+    height: 264px; /* 高さ */
+    z-index: 1100; /* 重なり順 */
+}
+
+.contactHeadingNew {
+    position: absolute; /* 絶対位置指定 */
+    bottom: 561px; /* 下からの位置 */
+    left: 646px; /* 左からの位置 */
+    color: #FFF; /* テキストカラー */
+    font-family: 'Jura'; /* フォントファミリー */
+    font-size: 40px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 400; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    width: 148px; /* 幅 */
+    height: 47px; /* 高さ */
+}
+
+.contactSubtextNew {
+    position: absolute; /* 絶対位置指定 */
+    bottom: 541px; /* 下からの位置 */
+    left: 646px; /* 左からの位置 */
+    color: #FFF; /* テキストカラー */
+    font-family: 'Noto Sans JP'; /* フォントファミリー */
+    font-size: 14px; /* フォントサイズ */
+    font-style: normal; /* フォントスタイル */
+    font-weight: 700; /* フォントウェイト */
+    line-height: normal; /* 行の高さ */
+    width: 84px; /* 幅 */
+    height: 20px; /* 高さ */
+}
+
+/* ここに他のスタイルも続く */
